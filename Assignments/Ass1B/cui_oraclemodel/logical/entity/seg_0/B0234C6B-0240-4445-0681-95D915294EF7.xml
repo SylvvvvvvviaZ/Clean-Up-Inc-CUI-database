@@ -1,0 +1,98 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="B0234C6B-0240-4445-0681-95D915294EF7" name="BIN">
+<createdBy>a726928</createdBy>
+<createdTime>2023-05-01 08:15:20 UTC</createdTime>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="F17559B2-635A-3F8E-895F-4E562DD78296" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="bin_rfid_tag" id="55A07B22-BCC5-A45B-CF6D-667A69BE9DEA">
+<createdBy>a726928</createdBy>
+<createdTime>2023-05-01 08:15:37 UTC</createdTime>
+<commentInRDBMS><![CDATA[bin rfid tag, which is unique]]></commentInRDBMS>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="F17559B2-635A-3F8E-895F-4E562DD78296" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>16</dataTypeSize>
+<ownDataTypeParameters>16,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="bin_supply_date" id="88DBCD59-5A4E-D6CE-B43C-BC1E2CCE40C4">
+<createdBy>a726928</createdBy>
+<createdTime>2023-05-01 08:21:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[bin supply date]]></commentInRDBMS>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="F17559B2-635A-3F8E-895F-4E562DD78296" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="bin_replace_reason" id="BBDC45B1-7F6D-3364-8BC2-74E4833BAE9F">
+<createdBy>a726928</createdBy>
+<createdTime>2023-05-01 08:22:26 UTC</createdTime>
+<commentInRDBMS><![CDATA[about bin replace reason]]></commentInRDBMS>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="F17559B2-635A-3F8E-895F-4E562DD78296" value="true"/>
+</engineerTo>
+<constraintName>chk_reason</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<listOfValues>
+<valueDef value="B" description="Bin Failure(fair use eg. old age)"/>
+<valueDef value="D" description="Damage by owner"/>
+<valueDef value="DP" description="Damaged during pickup of waste"/>
+<valueDef value="S" description="Stolen"/>
+</listOfValues>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="property_street_number" id="614977E4-FC6B-DF47-B789-1B6FB88BDDB1">
+<createdBy>a726928</createdBy>
+<createdTime>2023-05-01 08:39:53 UTC</createdTime>
+<commentInRDBMS><![CDATA[property_street_number]]></commentInRDBMS>
+<generatorID>02A1363C-CC95-2F49-BC43-8E1EB075F68D</generatorID>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="F17559B2-635A-3F8E-895F-4E562DD78296" value="true"/>
+</engineerTo>
+<referedAttribute>91BE140B-3559-5F1B-FA7C-A7874BB0B122</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="D5CA041C-1F3E-7303-8245-0224BAB7A2FE" name="BIN PK">
+<createdBy>a726928</createdBy>
+<createdTime>2023-05-01 08:18:59 UTC</createdTime>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="F17559B2-635A-3F8E-895F-4E562DD78296" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>55A07B22-BCC5-A45B-CF6D-667A69BE9DEA</attributeRef>
+<attributeRef>614977E4-FC6B-DF47-B789-1B6FB88BDDB1</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
