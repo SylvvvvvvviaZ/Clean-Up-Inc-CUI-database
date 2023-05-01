@@ -1,0 +1,53 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Diagram class="oracle.dbtools.crest.swingui.logical.DPVLogical" name="Logical" id="2FBD2CEA-916B-D288-C4A3-C81EE614CBE1">
+<createdBy>sheandefonseka</createdBy>
+<modifiedBy>sheandefonseka</modifiedBy>
+<createdTime>2023-05-01 05:15:34 UTC</createdTime>
+<autoRoute>false</autoRoute>
+<boxInbox>true</boxInbox>
+<showLegend>true</showLegend>
+<showLabels>true</showLabels>
+<showRelAttributes>false</showRelAttributes>
+<gridEnabled>false</gridEnabled>
+<showGrid>false</showGrid>
+<diagramColor>-1</diagramColor>
+<display>false</display>
+<notation>2</notation>
+<objectViews>
+<OView class="oracle.dbtools.crest.swingui.logical.TVEntity" oid="0063B270-4DC2-1B25-CCA8-6346D35C22DF" otype="Entity" vid="F67CD9DF-D151-886F-DA9B-4DF75994E649">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="598" y="28" width="249" height="130"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.TVLegend" oid="4F438A43-88CB-4DF4-A206-F43391B5EB06" otype="Legend" vid="5C335195-A8DB-AF2C-A299-42A23E139485">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="10" y="10" width="226" height="128"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.logical.TVEntity" oid="8162DC2A-2EDE-483D-B2E9-75837E4E4189" otype="Entity" vid="5E2DF673-F49A-9650-799B-350D7E8F2EDD">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="617" y="271" width="208" height="127"/>
+</OView>
+</objectViews>
+<connectors>
+<Connector class="oracle.dbtools.crest.swingui.logical.TVRelation" oid="2B607CAC-20F3-119C-A4FA-B65C539C486A" otype="Relation" vid_source="F67CD9DF-D151-886F-DA9B-4DF75994E649" vid_target="5E2DF673-F49A-9650-799B-350D7E8F2EDD">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<backgroundColor>-16777216</backgroundColor>
+<lineWidth>1</lineWidth>
+<sourceLabel class="oracle.dbtools.crest.model.design.Label">
+<site>0</site>
+<labelBounds x="736" y="194" width="71" height="30"/>
+<noBackgroundColor>true</noBackgroundColor>
+<noForegroundColor>true</noForegroundColor>
+</sourceLabel>
+<targetLabel class="oracle.dbtools.crest.model.design.Label">
+<site>2</site>
+<labelBounds x="736" y="235" width="17" height="30"/>
+<noBackgroundColor>true</noBackgroundColor>
+<noForegroundColor>true</noForegroundColor>
+</targetLabel>
+<points>
+<point x="736" y="158"/>
+<point x="736" y="271"/>
+</points>
+</Connector>
+</connectors>
+</Diagram>

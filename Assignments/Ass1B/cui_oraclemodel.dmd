@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="cui_oraclemodel" id="48046100-D124-40B8-E5BE-448C1906EBAE" version="3.5">
+<createdBy>sheandefonseka</createdBy>
+<createdTime>2023-05-01 05:15:29 UTC</createdTime>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>48046100-D124-40B8-E5BE-448C1906EBAE</designId>
+</OSDM_Design>
