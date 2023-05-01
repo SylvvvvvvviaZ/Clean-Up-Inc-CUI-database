@@ -1,7 +1,7 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="B0234C6B-0240-4445-0681-95D915294EF7" name="BIN">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="3AE5F3A8-0754-1560-FF65-4BFE8FB5F65A" name="CONTRACT_SUPPLY_COAST">
 <createdBy>a726928</createdBy>
-<createdTime>2023-05-01 08:15:20 UTC</createdTime>
+<createdTime>2023-05-01 09:28:51 UTC</createdTime>
 <ownerDesignName>cui_oraclemodel</ownerDesignName>
 <engineerTo>
 <item key="F17559B2-635A-3F8E-895F-4E562DD78296" value="true"/>
@@ -15,75 +15,71 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="bin_rfid_tag" id="55A07B22-BCC5-A45B-CF6D-667A69BE9DEA">
+<Attribute name="bin_type_size" id="1FB90B8C-A968-7037-B512-69D36DC5BA3D">
 <createdBy>a726928</createdBy>
-<createdTime>2023-05-01 08:15:37 UTC</createdTime>
-<commentInRDBMS><![CDATA[bin rfid tag, which is unique]]></commentInRDBMS>
+<createdTime>2023-05-01 09:30:06 UTC</createdTime>
+<commentInRDBMS><![CDATA[bin type size, which unique]]></commentInRDBMS>
 <ownerDesignName>cui_oraclemodel</ownerDesignName>
 <engineerTo>
 <item key="F17559B2-635A-3F8E-895F-4E562DD78296" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>16</dataTypeSize>
-<ownDataTypeParameters>16,,</ownDataTypeParameters>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="bin_supply_date" id="88DBCD59-5A4E-D6CE-B43C-BC1E2CCE40C4">
+<Attribute name="contract_supply_coast" id="C0B03A38-E162-F177-0512-E3B75B3D7ACB">
 <createdBy>a726928</createdBy>
-<createdTime>2023-05-01 08:21:51 UTC</createdTime>
-<commentInRDBMS><![CDATA[bin supply date]]></commentInRDBMS>
+<createdTime>2023-05-01 09:31:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[contract supply coast]]></commentInRDBMS>
 <ownerDesignName>cui_oraclemodel</ownerDesignName>
 <engineerTo>
 <item key="F17559B2-635A-3F8E-895F-4E562DD78296" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT007</logicalDatatype>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="contract_number" id="F3F65B68-3E31-6DA2-8264-8F99C70F6729">
+<createdBy>a726928</createdBy>
+<createdTime>2023-05-01 09:56:11 UTC</createdTime>
+<commentInRDBMS><![CDATA[contract number, which is unique]]></commentInRDBMS>
+<generatorID>FA23A1A3-5193-3C3D-E86F-1EB4499B6F2F</generatorID>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="F17559B2-635A-3F8E-895F-4E562DD78296" value="true"/>
+</engineerTo>
+<referedAttribute>FDFA04C2-D307-82E2-DFE4-2C9FBFD05DA5</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="bin_replace_reason" id="BBDC45B1-7F6D-3364-8BC2-74E4833BAE9F">
+<Attribute name="authority_name" id="0C7652BF-12E4-8A45-A800-944ACED1BCD8">
 <createdBy>a726928</createdBy>
-<createdTime>2023-05-01 08:22:26 UTC</createdTime>
-<commentInRDBMS><![CDATA[about bin replace reason]]></commentInRDBMS>
+<createdTime>2023-05-01 09:56:11 UTC</createdTime>
+<commentInRDBMS><![CDATA[The local authority's name (which is unique)]]></commentInRDBMS>
+<generatorID>FA23A1A3-5193-3C3D-E86F-1EB4499B6F2F</generatorID>
 <ownerDesignName>cui_oraclemodel</ownerDesignName>
 <engineerTo>
 <item key="F17559B2-635A-3F8E-895F-4E562DD78296" value="true"/>
 </engineerTo>
-<constraintName>chk_reason</constraintName>
+<referedAttribute>0CC57D81-0DA0-0962-E0B8-2A05DDB5172A</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>50</dataTypeSize>
-<listOfValues>
-<valueDef value="B" description="Bin Failure(fair use eg. old age)"/>
-<valueDef value="D" description="Damage by owner"/>
-<valueDef value="DP" description="Damaged during pickup of waste"/>
-<valueDef value="S" description="Stolen"/>
-</listOfValues>
-<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="property_street_number" id="614977E4-FC6B-DF47-B789-1B6FB88BDDB1">
+<Attribute name="bin_type_size1" id="719FC84D-037E-E3AE-F786-64CC5C9571E6">
 <createdBy>a726928</createdBy>
-<createdTime>2023-05-01 08:39:53 UTC</createdTime>
-<commentInRDBMS><![CDATA[property_street_number]]></commentInRDBMS>
-<generatorID>02A1363C-CC95-2F49-BC43-8E1EB075F68D</generatorID>
-<ownerDesignName>cui_oraclemodel</ownerDesignName>
-<engineerTo>
-<item key="F17559B2-635A-3F8E-895F-4E562DD78296" value="true"/>
-</engineerTo>
-<referedAttribute>91BE140B-3559-5F1B-FA7C-A7874BB0B122</referedAttribute>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>3</dataTypePrecision>
-<ownDataTypeParameters>,3,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="bin_type_size" id="686810FF-4D07-1A58-23D1-FDFF074BF263">
-<createdBy>a726928</createdBy>
-<createdTime>2023-05-01 10:44:51 UTC</createdTime>
+<createdTime>2023-05-01 10:28:50 UTC</createdTime>
 <commentInRDBMS><![CDATA[bin type size,which is ubique]]></commentInRDBMS>
-<generatorID>07125586-E816-EDBB-8A98-AB5CAD8A57B7</generatorID>
+<generatorID>4830DA42-C166-7A5F-3A77-62055AD76B0F</generatorID>
 <ownerDesignName>cui_oraclemodel</ownerDesignName>
 <engineerTo>
 <item key="F17559B2-635A-3F8E-895F-4E562DD78296" value="true"/>
@@ -95,11 +91,11 @@
 <dataTypePrecision>7</dataTypePrecision>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="waste_type_id" id="3A669250-A656-4376-F13E-80A2760336A8">
+<Attribute name="waste_type_id" id="8B1F6C24-0983-3CA8-BC7E-68EE8B0BA17D">
 <createdBy>a726928</createdBy>
-<createdTime>2023-05-01 10:44:51 UTC</createdTime>
+<createdTime>2023-05-01 10:33:03 UTC</createdTime>
 <commentInRDBMS><![CDATA[aste type id, which is unique]]></commentInRDBMS>
-<generatorID>07125586-E816-EDBB-8A98-AB5CAD8A57B7</generatorID>
+<generatorID>4830DA42-C166-7A5F-3A77-62055AD76B0F</generatorID>
 <ownerDesignName>cui_oraclemodel</ownerDesignName>
 <engineerTo>
 <item key="F17559B2-635A-3F8E-895F-4E562DD78296" value="true"/>
@@ -113,17 +109,20 @@
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
-<identifier id="D5CA041C-1F3E-7303-8245-0224BAB7A2FE" name="BIN PK">
+<identifier id="6F52246B-F1CE-CE87-39B6-F85D746CB2DF" name="CONTRACT_SUPPLY_COAST PK">
 <createdBy>a726928</createdBy>
-<createdTime>2023-05-01 08:18:59 UTC</createdTime>
+<createdTime>2023-05-01 09:30:41 UTC</createdTime>
 <ownerDesignName>cui_oraclemodel</ownerDesignName>
 <engineerTo>
 <item key="F17559B2-635A-3F8E-895F-4E562DD78296" value="true"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
-<attributeRef>55A07B22-BCC5-A45B-CF6D-667A69BE9DEA</attributeRef>
-<attributeRef>614977E4-FC6B-DF47-B789-1B6FB88BDDB1</attributeRef>
+<attributeRef>1FB90B8C-A968-7037-B512-69D36DC5BA3D</attributeRef>
+<attributeRef>F3F65B68-3E31-6DA2-8264-8F99C70F6729</attributeRef>
+<attributeRef>0C7652BF-12E4-8A45-A800-944ACED1BCD8</attributeRef>
+<attributeRef>719FC84D-037E-E3AE-F786-64CC5C9571E6</attributeRef>
+<attributeRef>8B1F6C24-0983-3CA8-BC7E-68EE8B0BA17D</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

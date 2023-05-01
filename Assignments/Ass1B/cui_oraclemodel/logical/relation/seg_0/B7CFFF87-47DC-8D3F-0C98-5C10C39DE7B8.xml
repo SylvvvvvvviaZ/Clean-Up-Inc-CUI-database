@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="waste_type- contract_waste_coast" directorySegmentName="seg_0" id="B7CFFF87-47DC-8D3F-0C98-5C10C39DE7B8">
+<createdBy>a726928</createdBy>
+<createdTime>2023-05-01 09:25:20 UTC</createdTime>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="F17559B2-635A-3F8E-895F-4E562DD78296" value="true"/>
+</engineerTo>
+<sourcePk>25F639B3-6607-0F8E-5036-79C2F634DFEC</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>assign_to</nameOnSource>
+<nameOnTarget> </nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>3242BEDF-C18F-D06F-FFDF-5EC4D54DD4D8</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>A9B7BBF2-57A4-26B4-6C27-539E49885FBD</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>
