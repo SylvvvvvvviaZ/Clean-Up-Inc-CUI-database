@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="7FD67F22-C9F3-CAC2-F5FC-3EFC881E656A" name="DRIVER_COLLECTION">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="7FD67F22-C9F3-CAC2-F5FC-3EFC881E656A" name="DRIVER_COLLECTOR">
 <createdBy>sheandefonseka</createdBy>
 <createdTime>2023-05-02 11:05:25 UTC</createdTime>
 <ownerDesignName>cui_oraclemodel</ownerDesignName>
