@@ -15,52 +15,33 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="contract_collection_cost" id="E245517F-2ACB-50BA-1FCD-CD7BF36202F4">
-<createdBy>a726928</createdBy>
-<createdTime>2023-05-01 09:03:13 UTC</createdTime>
-<commentInRDBMS><![CDATA[contract collection coast]]></commentInRDBMS>
-<ownerDesignName>cui_oraclemodel</ownerDesignName>
-<engineerTo>
-<item key="F17559B2-635A-3F8E-895F-4E562DD78296" value="true"/>
-</engineerTo>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>5</dataTypePrecision>
-<ownDataTypeParameters>,5,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="contract_number" id="B609DC5D-07C9-CD20-2115-B7B53A75099E">
-<createdBy>a726928</createdBy>
-<createdTime>2023-05-01 09:16:18 UTC</createdTime>
-<commentInRDBMS><![CDATA[contract number, which is unique]]></commentInRDBMS>
-<generatorID>32462DA1-5118-132C-14C4-3CDDD9E2AC22</generatorID>
-<ownerDesignName>cui_oraclemodel</ownerDesignName>
-<engineerTo>
-<item key="F17559B2-635A-3F8E-895F-4E562DD78296" value="true"/>
-</engineerTo>
-<referedAttribute>FDFA04C2-D307-82E2-DFE4-2C9FBFD05DA5</referedAttribute>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>7</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="waste_type_id" id="6FF93CF3-AF31-E6E3-EE69-414002318F5D">
+<Attribute name="collected_kg" id="1162F6A0-9682-BA35-BF8F-AE104C0E0607">
 <createdBy>sheandefonseka</createdBy>
-<createdTime>2023-05-01 14:13:52 UTC</createdTime>
-<commentInRDBMS><![CDATA[aste type id, which is unique]]></commentInRDBMS>
-<generatorID>A73F792F-ED7A-E49F-141B-EC48450EE001</generatorID>
+<createdTime>2023-05-02 11:08:28 UTC</createdTime>
+<commentInRDBMS><![CDATA[The weight of the respective bin.]]></commentInRDBMS>
 <ownerDesignName>cui_oraclemodel</ownerDesignName>
 <engineerTo>
 <item key="F17559B2-635A-3F8E-895F-4E562DD78296" value="true"/>
 </engineerTo>
-<referedAttribute>47F665F4-9F8C-8E86-8DBF-567D908E6C71</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>7</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="overweight" id="BF1C3225-2DB8-F703-34D4-18E724288ACC">
+<createdBy>sheandefonseka</createdBy>
+<createdTime>2023-05-02 11:08:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Is the bin overweight or not.]]></commentInRDBMS>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="F17559B2-635A-3F8E-895F-4E562DD78296" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
@@ -73,8 +54,7 @@
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
-<attributeRef>B609DC5D-07C9-CD20-2115-B7B53A75099E</attributeRef>
-<attributeRef>6FF93CF3-AF31-E6E3-EE69-414002318F5D</attributeRef>
+<attributeRef>1162F6A0-9682-BA35-BF8F-AE104C0E0607</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

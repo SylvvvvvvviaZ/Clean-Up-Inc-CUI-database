@@ -1,0 +1,46 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="7FD67F22-C9F3-CAC2-F5FC-3EFC881E656A" name="DRIVER_COLLECTION">
+<createdBy>sheandefonseka</createdBy>
+<createdTime>2023-05-02 11:05:25 UTC</createdTime>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="F17559B2-635A-3F8E-895F-4E562DD78296" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="date_of_collection" id="D272D98E-1247-DC34-7D21-35E49ECD7494">
+<createdBy>sheandefonseka</createdBy>
+<createdTime>2023-05-02 11:05:32 UTC</createdTime>
+<commentInRDBMS><![CDATA[The date of collection for the bins.]]></commentInRDBMS>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="F17559B2-635A-3F8E-895F-4E562DD78296" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="4D264BAB-1561-B36E-DBEA-C430D7398C8E" name="DRIVER_COLLECTION PK">
+<createdBy>sheandefonseka</createdBy>
+<createdTime>2023-05-02 11:05:49 UTC</createdTime>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="F17559B2-635A-3F8E-895F-4E562DD78296" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>D272D98E-1247-DC34-7D21-35E49ECD7494</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
