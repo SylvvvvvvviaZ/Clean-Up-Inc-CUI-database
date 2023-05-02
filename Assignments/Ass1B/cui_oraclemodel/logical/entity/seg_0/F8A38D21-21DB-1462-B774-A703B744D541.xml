@@ -45,6 +45,22 @@
 <dataTypePrecision>3</dataTypePrecision>
 <ownDataTypeParameters>,3,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="authority_name" id="D989FB5E-E1A9-C14E-290A-3E5AE22CE526">
+<createdBy>sheandefonseka</createdBy>
+<createdTime>2023-05-01 14:04:53 UTC</createdTime>
+<commentInRDBMS><![CDATA[The local authority's name (which is unique)]]></commentInRDBMS>
+<generatorID>5BDB458E-EFF5-E5FF-0B8D-BB75D5139F2D</generatorID>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="F17559B2-635A-3F8E-895F-4E562DD78296" value="true"/>
+</engineerTo>
+<referedAttribute>D14748F4-C031-9315-703A-378588F8643C</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>45</dataTypeSize>
+<ownDataTypeParameters>45,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="2CB72BD2-A878-B14D-6257-8874267920B2" name="PROPERTY PK">
@@ -57,6 +73,8 @@
 <pk>true</pk>
 <usedAttributes>
 <attributeRef>91BE140B-3559-5F1B-FA7C-A7874BB0B122</attributeRef>
+<attributeRef>1CF88FD2-D371-EDC4-4D6B-33D5B6E62E68</attributeRef>
+<attributeRef>D989FB5E-E1A9-C14E-290A-3E5AE22CE526</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

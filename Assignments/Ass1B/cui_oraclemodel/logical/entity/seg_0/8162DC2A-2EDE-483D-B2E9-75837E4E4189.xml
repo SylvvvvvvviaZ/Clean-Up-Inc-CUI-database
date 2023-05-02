@@ -29,22 +29,6 @@
 <dataTypePrecision>7</dataTypePrecision>
 <ownDataTypeParameters>,7,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="authority_name" id="0F0B6D3D-2EE1-F582-EAD7-FA4BEE87A8A1">
-<createdBy>sheandefonseka</createdBy>
-<createdTime>2023-05-01 07:00:39 UTC</createdTime>
-<commentInRDBMS><![CDATA[The local authority's name (which is unique)]]></commentInRDBMS>
-<generatorID>2B607CAC-20F3-119C-A4FA-B65C539C486A</generatorID>
-<ownerDesignName>cui_oraclemodel</ownerDesignName>
-<engineerTo>
-<item key="F17559B2-635A-3F8E-895F-4E562DD78296" value="true"/>
-</engineerTo>
-<referedAttribute>99134BE5-66FF-F645-9B7B-3F13768DFE19</referedAttribute>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>50</dataTypeSize>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
 <Attribute name="street_name" id="EEF2C5B9-F45A-0CD8-2B72-3DD55031B5EA">
 <createdBy>sheandefonseka</createdBy>
 <createdTime>2023-05-01 06:51:49 UTC</createdTime>
@@ -107,6 +91,22 @@
 <dataTypePrecision>4</dataTypePrecision>
 <ownDataTypeParameters>,4,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="authority_name" id="D14748F4-C031-9315-703A-378588F8643C">
+<createdBy>sheandefonseka</createdBy>
+<createdTime>2023-05-01 14:04:34 UTC</createdTime>
+<commentInRDBMS><![CDATA[The local authority's name (which is unique)]]></commentInRDBMS>
+<generatorID>EA60650F-C791-6A98-4EDA-72F0681F0954</generatorID>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="F17559B2-635A-3F8E-895F-4E562DD78296" value="true"/>
+</engineerTo>
+<referedAttribute>99134BE5-66FF-F645-9B7B-3F13768DFE19</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>35</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="47FDBF9D-58A9-2DCE-D3E8-75F3503A274F" name="STREET PK">
@@ -119,6 +119,7 @@
 <pk>true</pk>
 <usedAttributes>
 <attributeRef>627D3DE9-F784-2FBB-86DC-DA62AF707DAF</attributeRef>
+<attributeRef>D14748F4-C031-9315-703A-378588F8643C</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

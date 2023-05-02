@@ -1,21 +1,21 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="bin_tyep-contract_supply_coast" directorySegmentName="seg_0" id="4830DA42-C166-7A5F-3A77-62055AD76B0F">
-<createdBy>a726928</createdBy>
-<createdTime>2023-05-01 10:28:50 UTC</createdTime>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="waste_type-contract_waste_cost" directorySegmentName="seg_0" id="A73F792F-ED7A-E49F-141B-EC48450EE001">
+<createdBy>sheandefonseka</createdBy>
+<createdTime>2023-05-01 14:13:52 UTC</createdTime>
 <ownerDesignName>cui_oraclemodel</ownerDesignName>
 <engineerTo>
 <item key="F17559B2-635A-3F8E-895F-4E562DD78296" value="true"/>
 </engineerTo>
-<sourcePk>B307DA1F-8672-E535-7C49-E657ED07C5D4</sourcePk>
+<sourcePk>25F639B3-6607-0F8E-5036-79C2F634DFEC</sourcePk>
 <identifying>true</identifying>
 <nameOnSource>assigned_to</nameOnSource>
 <nameOnTarget> </nameOnTarget>
 <optionalSource>true</optionalSource>
 <optionalTarget>false</optionalTarget>
 <sourceCardinality>1</sourceCardinality>
-<sourceEntity>99FB12F8-1513-6608-196C-8A63DC92073E</sourceEntity>
+<sourceEntity>3242BEDF-C18F-D06F-FFDF-5EC4D54DD4D8</sourceEntity>
 <targetCardinalityString>*</targetCardinalityString>
-<targetEntity>3AE5F3A8-0754-1560-FF65-4BFE8FB5F65A</targetEntity>
+<targetEntity>A9B7BBF2-57A4-26B4-6C27-539E49885FBD</targetEntity>
 <transferable>true</transferable>
 <deleteRule>NO ACTION</deleteRule>
 </Relation>

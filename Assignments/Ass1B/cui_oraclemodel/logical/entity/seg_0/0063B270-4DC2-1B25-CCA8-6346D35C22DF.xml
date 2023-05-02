@@ -26,8 +26,8 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>50</dataTypeSize>
-<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<dataTypeSize>35</dataTypeSize>
+<ownDataTypeParameters>35,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="authority_ceo_fname" id="18290978-61EA-EEE7-EF6C-E9C17DDEBE6D">
 <createdBy>sheandefonseka</createdBy>
@@ -40,8 +40,8 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>50</dataTypeSize>
-<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<dataTypeSize>25</dataTypeSize>
+<ownDataTypeParameters>25,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="authority_ceo_lname" id="3232732A-D424-DC1B-FF8C-2038F4486D03">
 <createdBy>sheandefonseka</createdBy>
@@ -54,8 +54,8 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>50</dataTypeSize>
-<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<dataTypeSize>25</dataTypeSize>
+<ownDataTypeParameters>25,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="authority_ceo_telephone" id="B4512822-E7CF-E630-1232-D10BCBD7A864">
 <createdBy>sheandefonseka</createdBy>
@@ -68,8 +68,8 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>50</dataTypeSize>
-<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<dataTypeSize>15</dataTypeSize>
+<ownDataTypeParameters>15,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="authority_total_area" id="BA0B6B3F-619B-BCA2-3885-4636D08DACFD">
 <createdBy>sheandefonseka</createdBy>
@@ -97,7 +97,7 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>50</dataTypeSize>
+<dataTypeSize>15</dataTypeSize>
 <listOfValues>
 <valueDef value="B" description="Borough"/>
 <valueDef value="C" description="City"/>
@@ -105,7 +105,7 @@
 <valueDef value="S" description="Shire"/>
 <valueDef value="T" description="Town"/>
 </listOfValues>
-<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<ownDataTypeParameters>15,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">

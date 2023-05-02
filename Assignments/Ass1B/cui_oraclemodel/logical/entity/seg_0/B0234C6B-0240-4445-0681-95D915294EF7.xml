@@ -63,22 +63,6 @@
 </listOfValues>
 <ownDataTypeParameters>50,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="property_street_number" id="614977E4-FC6B-DF47-B789-1B6FB88BDDB1">
-<createdBy>a726928</createdBy>
-<createdTime>2023-05-01 08:39:53 UTC</createdTime>
-<commentInRDBMS><![CDATA[property_street_number]]></commentInRDBMS>
-<generatorID>02A1363C-CC95-2F49-BC43-8E1EB075F68D</generatorID>
-<ownerDesignName>cui_oraclemodel</ownerDesignName>
-<engineerTo>
-<item key="F17559B2-635A-3F8E-895F-4E562DD78296" value="true"/>
-</engineerTo>
-<referedAttribute>91BE140B-3559-5F1B-FA7C-A7874BB0B122</referedAttribute>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>3</dataTypePrecision>
-<ownDataTypeParameters>,3,</ownDataTypeParameters>
-</Attribute>
 <Attribute name="bin_type_size" id="686810FF-4D07-1A58-23D1-FDFF074BF263">
 <createdBy>a726928</createdBy>
 <createdTime>2023-05-01 10:44:51 UTC</createdTime>
@@ -93,11 +77,59 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="property_street_number" id="4630BC8A-C49F-B164-3D00-456D5B7EE1D0">
+<createdBy>sheandefonseka</createdBy>
+<createdTime>2023-05-01 14:01:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[property_street_number]]></commentInRDBMS>
+<generatorID>8D6981B4-1015-AB67-5865-5FAF727D6A98</generatorID>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="F17559B2-635A-3F8E-895F-4E562DD78296" value="true"/>
+</engineerTo>
+<referedAttribute>91BE140B-3559-5F1B-FA7C-A7874BB0B122</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="waste_type_id" id="3A669250-A656-4376-F13E-80A2760336A8">
-<createdBy>a726928</createdBy>
-<createdTime>2023-05-01 10:44:51 UTC</createdTime>
+<Attribute name="street_id" id="D18598A9-3C5C-73D4-8AE9-D70398B41C32">
+<createdBy>sheandefonseka</createdBy>
+<createdTime>2023-05-01 14:05:00 UTC</createdTime>
+<commentInRDBMS><![CDATA[This is the street/road id.]]></commentInRDBMS>
+<generatorID>8D6981B4-1015-AB67-5865-5FAF727D6A98</generatorID>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="F17559B2-635A-3F8E-895F-4E562DD78296" value="true"/>
+</engineerTo>
+<referedAttribute>1CF88FD2-D371-EDC4-4D6B-33D5B6E62E68</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="authority_name" id="0A6ED685-99D5-3325-A9AA-12F3F31105B3">
+<createdBy>sheandefonseka</createdBy>
+<createdTime>2023-05-01 14:05:00 UTC</createdTime>
+<commentInRDBMS><![CDATA[The local authority's name (which is unique)]]></commentInRDBMS>
+<generatorID>8D6981B4-1015-AB67-5865-5FAF727D6A98</generatorID>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="F17559B2-635A-3F8E-895F-4E562DD78296" value="true"/>
+</engineerTo>
+<referedAttribute>D989FB5E-E1A9-C14E-290A-3E5AE22CE526</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>45</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="waste_type_id" id="F44D344C-B36A-82F8-F4E6-10BAC5FA315D">
+<createdBy>sheandefonseka</createdBy>
+<createdTime>2023-05-01 14:15:07 UTC</createdTime>
 <commentInRDBMS><![CDATA[aste type id, which is unique]]></commentInRDBMS>
 <generatorID>07125586-E816-EDBB-8A98-AB5CAD8A57B7</generatorID>
 <ownerDesignName>cui_oraclemodel</ownerDesignName>
@@ -123,7 +155,6 @@
 <pk>true</pk>
 <usedAttributes>
 <attributeRef>55A07B22-BCC5-A45B-CF6D-667A69BE9DEA</attributeRef>
-<attributeRef>614977E4-FC6B-DF47-B789-1B6FB88BDDB1</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

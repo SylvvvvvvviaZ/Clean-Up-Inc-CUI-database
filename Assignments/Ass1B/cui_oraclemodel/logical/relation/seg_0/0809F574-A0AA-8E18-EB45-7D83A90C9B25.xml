@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="local_auth-contract" directorySegmentName="seg_0" id="0809F574-A0AA-8E18-EB45-7D83A90C9B25">
+<createdBy>sheandefonseka</createdBy>
+<createdTime>2023-05-01 14:03:33 UTC</createdTime>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="F17559B2-635A-3F8E-895F-4E562DD78296" value="true"/>
+</engineerTo>
+<sourcePk>2ECE0CA7-70BF-540D-D521-F68399396EC2</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>signed</nameOnSource>
+<nameOnTarget> </nameOnTarget>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>0063B270-4DC2-1B25-CCA8-6346D35C22DF</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>0F0C4333-F79A-5B68-B0A5-CCB5EE7E4E56</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

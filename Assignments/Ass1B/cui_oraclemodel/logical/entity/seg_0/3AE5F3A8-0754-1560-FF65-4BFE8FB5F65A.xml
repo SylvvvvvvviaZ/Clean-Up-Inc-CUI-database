@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="3AE5F3A8-0754-1560-FF65-4BFE8FB5F65A" name="CONTRACT_SUPPLY_COAST">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="3AE5F3A8-0754-1560-FF65-4BFE8FB5F65A" name="CONTRACT_SUPPLY_COST">
 <createdBy>a726928</createdBy>
 <createdTime>2023-05-01 09:28:51 UTC</createdTime>
 <ownerDesignName>cui_oraclemodel</ownerDesignName>
@@ -15,21 +15,7 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="bin_type_size" id="1FB90B8C-A968-7037-B512-69D36DC5BA3D">
-<createdBy>a726928</createdBy>
-<createdTime>2023-05-01 09:30:06 UTC</createdTime>
-<commentInRDBMS><![CDATA[bin type size, which unique]]></commentInRDBMS>
-<ownerDesignName>cui_oraclemodel</ownerDesignName>
-<engineerTo>
-<item key="F17559B2-635A-3F8E-895F-4E562DD78296" value="true"/>
-</engineerTo>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>7</dataTypePrecision>
-<ownDataTypeParameters>,7,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="contract_supply_coast" id="C0B03A38-E162-F177-0512-E3B75B3D7ACB">
+<Attribute name="contract_supply_cost" id="C0B03A38-E162-F177-0512-E3B75B3D7ACB">
 <createdBy>a726928</createdBy>
 <createdTime>2023-05-01 09:31:27 UTC</createdTime>
 <commentInRDBMS><![CDATA[contract supply coast]]></commentInRDBMS>
@@ -40,8 +26,8 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>7</dataTypePrecision>
-<ownDataTypeParameters>,7,</ownDataTypeParameters>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="contract_number" id="F3F65B68-3E31-6DA2-8264-8F99C70F6729">
 <createdBy>a726928</createdBy>
@@ -59,27 +45,11 @@
 <dataTypePrecision>7</dataTypePrecision>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="authority_name" id="0C7652BF-12E4-8A45-A800-944ACED1BCD8">
-<createdBy>a726928</createdBy>
-<createdTime>2023-05-01 09:56:11 UTC</createdTime>
-<commentInRDBMS><![CDATA[The local authority's name (which is unique)]]></commentInRDBMS>
-<generatorID>FA23A1A3-5193-3C3D-E86F-1EB4499B6F2F</generatorID>
-<ownerDesignName>cui_oraclemodel</ownerDesignName>
-<engineerTo>
-<item key="F17559B2-635A-3F8E-895F-4E562DD78296" value="true"/>
-</engineerTo>
-<referedAttribute>0CC57D81-0DA0-0962-E0B8-2A05DDB5172A</referedAttribute>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>50</dataTypeSize>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="bin_type_size1" id="719FC84D-037E-E3AE-F786-64CC5C9571E6">
-<createdBy>a726928</createdBy>
-<createdTime>2023-05-01 10:28:50 UTC</createdTime>
+<Attribute name="bin_type_size" id="F7D63BC6-98E8-11B6-AE03-900FFC5B1D5F">
+<createdBy>sheandefonseka</createdBy>
+<createdTime>2023-05-01 14:13:03 UTC</createdTime>
 <commentInRDBMS><![CDATA[bin type size,which is ubique]]></commentInRDBMS>
-<generatorID>4830DA42-C166-7A5F-3A77-62055AD76B0F</generatorID>
+<generatorID>F355C0EA-E6EA-E177-09C7-6F0F5503EC2C</generatorID>
 <ownerDesignName>cui_oraclemodel</ownerDesignName>
 <engineerTo>
 <item key="F17559B2-635A-3F8E-895F-4E562DD78296" value="true"/>
@@ -91,11 +61,11 @@
 <dataTypePrecision>7</dataTypePrecision>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="waste_type_id" id="8B1F6C24-0983-3CA8-BC7E-68EE8B0BA17D">
-<createdBy>a726928</createdBy>
-<createdTime>2023-05-01 10:33:03 UTC</createdTime>
+<Attribute name="waste_type_id" id="4F86A4D1-636E-B927-60DF-7A3994D67F75">
+<createdBy>sheandefonseka</createdBy>
+<createdTime>2023-05-01 14:15:07 UTC</createdTime>
 <commentInRDBMS><![CDATA[aste type id, which is unique]]></commentInRDBMS>
-<generatorID>4830DA42-C166-7A5F-3A77-62055AD76B0F</generatorID>
+<generatorID>F355C0EA-E6EA-E177-09C7-6F0F5503EC2C</generatorID>
 <ownerDesignName>cui_oraclemodel</ownerDesignName>
 <engineerTo>
 <item key="F17559B2-635A-3F8E-895F-4E562DD78296" value="true"/>
@@ -118,11 +88,9 @@
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
-<attributeRef>1FB90B8C-A968-7037-B512-69D36DC5BA3D</attributeRef>
 <attributeRef>F3F65B68-3E31-6DA2-8264-8F99C70F6729</attributeRef>
-<attributeRef>0C7652BF-12E4-8A45-A800-944ACED1BCD8</attributeRef>
-<attributeRef>719FC84D-037E-E3AE-F786-64CC5C9571E6</attributeRef>
-<attributeRef>8B1F6C24-0983-3CA8-BC7E-68EE8B0BA17D</attributeRef>
+<attributeRef>F7D63BC6-98E8-11B6-AE03-900FFC5B1D5F</attributeRef>
+<attributeRef>4F86A4D1-636E-B927-60DF-7A3994D67F75</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

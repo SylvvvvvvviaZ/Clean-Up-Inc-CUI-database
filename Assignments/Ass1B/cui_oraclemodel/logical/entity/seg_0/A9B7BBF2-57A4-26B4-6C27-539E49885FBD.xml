@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="A9B7BBF2-57A4-26B4-6C27-539E49885FBD" name="CONTRACT_WASTE_COAST">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="A9B7BBF2-57A4-26B4-6C27-539E49885FBD" name="CONTRACT_WASTE_COST">
 <createdBy>a726928</createdBy>
 <createdTime>2023-05-01 08:59:36 UTC</createdTime>
 <ownerDesignName>cui_oraclemodel</ownerDesignName>
@@ -15,21 +15,7 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="waste_type_id" id="D625019A-17C7-A611-A20C-EC733667C6D3">
-<createdBy>a726928</createdBy>
-<createdTime>2023-05-01 09:02:09 UTC</createdTime>
-<commentInRDBMS><![CDATA[waste type id, which is unique]]></commentInRDBMS>
-<ownerDesignName>cui_oraclemodel</ownerDesignName>
-<engineerTo>
-<item key="F17559B2-635A-3F8E-895F-4E562DD78296" value="true"/>
-</engineerTo>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>50</dataTypePrecision>
-<ownDataTypeParameters>,50,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="contract_collection_coast" id="E245517F-2ACB-50BA-1FCD-CD7BF36202F4">
+<Attribute name="contract_collection_cost" id="E245517F-2ACB-50BA-1FCD-CD7BF36202F4">
 <createdBy>a726928</createdBy>
 <createdTime>2023-05-01 09:03:13 UTC</createdTime>
 <commentInRDBMS><![CDATA[contract collection coast]]></commentInRDBMS>
@@ -40,9 +26,9 @@
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>50</dataTypeSize>
-<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="contract_number" id="B609DC5D-07C9-CD20-2115-B7B53A75099E">
 <createdBy>a726928</createdBy>
@@ -60,27 +46,11 @@
 <dataTypePrecision>7</dataTypePrecision>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="authority_name" id="70CC573C-DC6B-368F-0578-F5F6B4661860">
-<createdBy>a726928</createdBy>
-<createdTime>2023-05-01 09:16:18 UTC</createdTime>
-<commentInRDBMS><![CDATA[The local authority's name (which is unique)]]></commentInRDBMS>
-<generatorID>32462DA1-5118-132C-14C4-3CDDD9E2AC22</generatorID>
-<ownerDesignName>cui_oraclemodel</ownerDesignName>
-<engineerTo>
-<item key="F17559B2-635A-3F8E-895F-4E562DD78296" value="true"/>
-</engineerTo>
-<referedAttribute>0CC57D81-0DA0-0962-E0B8-2A05DDB5172A</referedAttribute>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>50</dataTypeSize>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="waste_type_id1" id="4E0A0162-8BFE-D2B9-B951-3EFF43993F6D">
-<createdBy>a726928</createdBy>
-<createdTime>2023-05-01 09:25:20 UTC</createdTime>
+<Attribute name="waste_type_id" id="6FF93CF3-AF31-E6E3-EE69-414002318F5D">
+<createdBy>sheandefonseka</createdBy>
+<createdTime>2023-05-01 14:13:52 UTC</createdTime>
 <commentInRDBMS><![CDATA[aste type id, which is unique]]></commentInRDBMS>
-<generatorID>B7CFFF87-47DC-8D3F-0C98-5C10C39DE7B8</generatorID>
+<generatorID>A73F792F-ED7A-E49F-141B-EC48450EE001</generatorID>
 <ownerDesignName>cui_oraclemodel</ownerDesignName>
 <engineerTo>
 <item key="F17559B2-635A-3F8E-895F-4E562DD78296" value="true"/>
@@ -103,9 +73,8 @@
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
-<attributeRef>D625019A-17C7-A611-A20C-EC733667C6D3</attributeRef>
 <attributeRef>B609DC5D-07C9-CD20-2115-B7B53A75099E</attributeRef>
-<attributeRef>70CC573C-DC6B-368F-0578-F5F6B4661860</attributeRef>
+<attributeRef>6FF93CF3-AF31-E6E3-EE69-414002318F5D</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>
