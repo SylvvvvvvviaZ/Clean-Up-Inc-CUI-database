@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="contract-driver_collector" directorySegmentName="seg_0" id="E9B4D9CA-80AE-1270-7B05-6B35F9E1CE53">
+<createdBy>sheandefonseka</createdBy>
+<createdTime>2023-05-02 13:23:03 UTC</createdTime>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="F17559B2-635A-3F8E-895F-4E562DD78296" value="true"/>
+</engineerTo>
+<identifying>false</identifying>
+<nameOnSource>establishes</nameOnSource>
+<nameOnTarget> </nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>0F0C4333-F79A-5B68-B0A5-CCB5EE7E4E56</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>7FD67F22-C9F3-CAC2-F5FC-3EFC881E656A</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

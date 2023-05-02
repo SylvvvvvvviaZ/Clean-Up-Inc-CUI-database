@@ -43,34 +43,34 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>7</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="bin_type_size" id="F7D63BC6-98E8-11B6-AE03-900FFC5B1D5F">
+<Attribute name="bin_type_id" id="C8DCB4F9-1859-302D-33B0-257A97340DAE">
 <createdBy>sheandefonseka</createdBy>
-<createdTime>2023-05-01 14:13:03 UTC</createdTime>
-<commentInRDBMS><![CDATA[bin type size,which is ubique]]></commentInRDBMS>
+<createdTime>2023-05-02 13:12:33 UTC</createdTime>
+<commentInRDBMS><![CDATA[Bin Type Id (Surrogate PK)]]></commentInRDBMS>
 <generatorID>F355C0EA-E6EA-E177-09C7-6F0F5503EC2C</generatorID>
 <ownerDesignName>cui_oraclemodel</ownerDesignName>
 <engineerTo>
 <item key="F17559B2-635A-3F8E-895F-4E562DD78296" value="true"/>
 </engineerTo>
-<referedAttribute>5A98F195-CFE2-8ADA-AE25-23919912EBDA</referedAttribute>
+<referedAttribute>EB5E66FB-1322-04FE-FB73-9B771C5102F7</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>7</dataTypePrecision>
+<dataTypePrecision>4</dataTypePrecision>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="waste_type_id" id="4F86A4D1-636E-B927-60DF-7A3994D67F75">
+<Attribute name="waste_type_id" id="7D09E6D6-608C-01D5-AC24-579539C3816C">
 <createdBy>sheandefonseka</createdBy>
-<createdTime>2023-05-01 14:15:07 UTC</createdTime>
+<createdTime>2023-05-02 13:27:21 UTC</createdTime>
 <commentInRDBMS><![CDATA[aste type id, which is unique]]></commentInRDBMS>
-<generatorID>F355C0EA-E6EA-E177-09C7-6F0F5503EC2C</generatorID>
+<generatorID>FA23A1A3-5193-3C3D-E86F-1EB4499B6F2F</generatorID>
 <ownerDesignName>cui_oraclemodel</ownerDesignName>
 <engineerTo>
 <item key="F17559B2-635A-3F8E-895F-4E562DD78296" value="true"/>
 </engineerTo>
-<referedAttribute>A7301968-914D-0705-9F5B-EAE86CE7A07B</referedAttribute>
+<referedAttribute>9E495201-8601-7FFB-3311-F210E4339A9A</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
@@ -89,8 +89,7 @@
 <pk>true</pk>
 <usedAttributes>
 <attributeRef>F3F65B68-3E31-6DA2-8264-8F99C70F6729</attributeRef>
-<attributeRef>F7D63BC6-98E8-11B6-AE03-900FFC5B1D5F</attributeRef>
-<attributeRef>4F86A4D1-636E-B927-60DF-7A3994D67F75</attributeRef>
+<attributeRef>7D09E6D6-608C-01D5-AC24-579539C3816C</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

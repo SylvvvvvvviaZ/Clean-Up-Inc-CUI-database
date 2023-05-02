@@ -71,6 +71,42 @@
 <dataTypeSize>35</dataTypeSize>
 <ownDataTypeParameters>35,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="collection_frequency" id="51E245A2-3737-6377-7E93-86A2BEFC54E5">
+<createdBy>sheandefonseka</createdBy>
+<createdTime>2023-05-02 13:14:34 UTC</createdTime>
+<commentInRDBMS><![CDATA[Collection frequency of bins.]]></commentInRDBMS>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="F17559B2-635A-3F8E-895F-4E562DD78296" value="true"/>
+</engineerTo>
+<constraintName>chk_collections</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<listOfValues>
+<valueDef value="F" description="Fortnightly"/>
+<valueDef value="M" description="Monthly"/>
+<valueDef value="W" description="Weekly"/>
+</listOfValues>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="waste_type_id" id="9E495201-8601-7FFB-3311-F210E4339A9A">
+<createdBy>sheandefonseka</createdBy>
+<createdTime>2023-05-02 13:27:12 UTC</createdTime>
+<commentInRDBMS><![CDATA[aste type id, which is unique]]></commentInRDBMS>
+<generatorID>4453E4D4-8904-7A77-F385-47E39A953782</generatorID>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="F17559B2-635A-3F8E-895F-4E562DD78296" value="true"/>
+</engineerTo>
+<referedAttribute>47F665F4-9F8C-8E86-8DBF-567D908E6C71</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="2C3FEA99-31DF-9422-AB3F-EF34857104A3" name="CONTRACT PK">
@@ -83,6 +119,7 @@
 <pk>true</pk>
 <usedAttributes>
 <attributeRef>FDFA04C2-D307-82E2-DFE4-2C9FBFD05DA5</attributeRef>
+<attributeRef>9E495201-8601-7FFB-3311-F210E4339A9A</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

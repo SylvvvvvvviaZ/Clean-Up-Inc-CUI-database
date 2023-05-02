@@ -1,21 +1,21 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="bin_type-contract_supply_cost" directorySegmentName="seg_0" id="F355C0EA-E6EA-E177-09C7-6F0F5503EC2C">
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="driver_collector-contract_waste_cost" directorySegmentName="seg_0" id="8C50A0D5-9AB2-5843-DBCC-E33C32C5AFCE">
 <createdBy>sheandefonseka</createdBy>
-<createdTime>2023-05-01 14:13:03 UTC</createdTime>
+<createdTime>2023-05-02 13:24:32 UTC</createdTime>
 <ownerDesignName>cui_oraclemodel</ownerDesignName>
 <engineerTo>
 <item key="F17559B2-635A-3F8E-895F-4E562DD78296" value="true"/>
 </engineerTo>
-<sourcePk>B307DA1F-8672-E535-7C49-E657ED07C5D4</sourcePk>
-<identifying>false</identifying>
-<nameOnSource>assigned_to</nameOnSource>
+<sourcePk>4D264BAB-1561-B36E-DBEA-C430D7398C8E</sourcePk>
+<identifying>true</identifying>
+<nameOnSource>contains</nameOnSource>
 <nameOnTarget> </nameOnTarget>
 <optionalSource>true</optionalSource>
 <optionalTarget>false</optionalTarget>
 <sourceCardinality>1</sourceCardinality>
-<sourceEntity>99FB12F8-1513-6608-196C-8A63DC92073E</sourceEntity>
+<sourceEntity>7FD67F22-C9F3-CAC2-F5FC-3EFC881E656A</sourceEntity>
 <targetCardinalityString>*</targetCardinalityString>
-<targetEntity>3AE5F3A8-0754-1560-FF65-4BFE8FB5F65A</targetEntity>
+<targetEntity>A9B7BBF2-57A4-26B4-6C27-539E49885FBD</targetEntity>
 <transferable>true</transferable>
 <deleteRule>NO ACTION</deleteRule>
 </Relation>

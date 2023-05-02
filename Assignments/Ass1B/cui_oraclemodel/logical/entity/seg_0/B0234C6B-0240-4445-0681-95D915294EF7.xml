@@ -63,22 +63,6 @@
 </listOfValues>
 <ownDataTypeParameters>50,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="bin_type_size" id="686810FF-4D07-1A58-23D1-FDFF074BF263">
-<createdBy>a726928</createdBy>
-<createdTime>2023-05-01 10:44:51 UTC</createdTime>
-<commentInRDBMS><![CDATA[bin type size,which is ubique]]></commentInRDBMS>
-<generatorID>07125586-E816-EDBB-8A98-AB5CAD8A57B7</generatorID>
-<ownerDesignName>cui_oraclemodel</ownerDesignName>
-<engineerTo>
-<item key="F17559B2-635A-3F8E-895F-4E562DD78296" value="true"/>
-</engineerTo>
-<referedAttribute>5A98F195-CFE2-8ADA-AE25-23919912EBDA</referedAttribute>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>7</dataTypePrecision>
-<ownDataTypeParameters>,7,</ownDataTypeParameters>
-</Attribute>
 <Attribute name="property_street_number" id="4630BC8A-C49F-B164-3D00-456D5B7EE1D0">
 <createdBy>sheandefonseka</createdBy>
 <createdTime>2023-05-01 14:01:54 UTC</createdTime>
@@ -127,21 +111,21 @@
 <dataTypeSize>45</dataTypeSize>
 <ownDataTypeParameters>45,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="waste_type_id" id="F44D344C-B36A-82F8-F4E6-10BAC5FA315D">
+<Attribute name="bin_type_id" id="076D3D40-C973-1AD8-F7DB-86272F5EDB07">
 <createdBy>sheandefonseka</createdBy>
-<createdTime>2023-05-01 14:15:07 UTC</createdTime>
-<commentInRDBMS><![CDATA[aste type id, which is unique]]></commentInRDBMS>
+<createdTime>2023-05-02 13:12:33 UTC</createdTime>
+<commentInRDBMS><![CDATA[Bin Type Id (Surrogate PK)]]></commentInRDBMS>
 <generatorID>07125586-E816-EDBB-8A98-AB5CAD8A57B7</generatorID>
 <ownerDesignName>cui_oraclemodel</ownerDesignName>
 <engineerTo>
 <item key="F17559B2-635A-3F8E-895F-4E562DD78296" value="true"/>
 </engineerTo>
-<referedAttribute>A7301968-914D-0705-9F5B-EAE86CE7A07B</referedAttribute>
+<referedAttribute>EB5E66FB-1322-04FE-FB73-9B771C5102F7</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>7</dataTypePrecision>
-<ownDataTypeParameters>,7,</ownDataTypeParameters>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">

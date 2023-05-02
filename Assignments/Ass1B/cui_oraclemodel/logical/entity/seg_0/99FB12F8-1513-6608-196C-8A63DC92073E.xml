@@ -59,6 +59,20 @@
 <dataTypePrecision>7</dataTypePrecision>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="bin_type_id" id="EB5E66FB-1322-04FE-FB73-9B771C5102F7">
+<createdBy>sheandefonseka</createdBy>
+<createdTime>2023-05-02 13:12:18 UTC</createdTime>
+<commentInRDBMS><![CDATA[Bin Type Id (Surrogate PK)]]></commentInRDBMS>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="F17559B2-635A-3F8E-895F-4E562DD78296" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="B307DA1F-8672-E535-7C49-E657ED07C5D4" name="BIN_TYPE PK">
@@ -70,8 +84,21 @@
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
-<attributeRef>5A98F195-CFE2-8ADA-AE25-23919912EBDA</attributeRef>
+<attributeRef>EB5E66FB-1322-04FE-FB73-9B771C5102F7</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="2A2BB902-8EDF-9D04-3779-DE8BB0888DB6" name="BIN_TYPE_UK">
+<createdBy>sheandefonseka</createdBy>
+<createdTime>2023-05-02 13:12:53 UTC</createdTime>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="F17559B2-635A-3F8E-895F-4E562DD78296" value="true"/>
+</engineerTo>
+<newElementsIDs>C7B37BC7-4683-0B10-FAAE-86196A0242B6,EB5E66FB-1322-04FE-FB73-9B771C5102F7,5A98F195-CFE2-8ADA-AE25-23919912EBDA</newElementsIDs>
+<usedAttributes>
 <attributeRef>A7301968-914D-0705-9F5B-EAE86CE7A07B</attributeRef>
+<attributeRef>EB5E66FB-1322-04FE-FB73-9B771C5102F7</attributeRef>
+<attributeRef>5A98F195-CFE2-8ADA-AE25-23919912EBDA</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>
