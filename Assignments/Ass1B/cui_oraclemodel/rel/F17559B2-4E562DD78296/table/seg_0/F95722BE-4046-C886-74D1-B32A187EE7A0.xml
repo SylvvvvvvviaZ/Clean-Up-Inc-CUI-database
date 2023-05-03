@@ -89,11 +89,28 @@
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>50</dataTypeSize>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
 <colAssociation fkAssociation="4DCD2558-26E6-410B-8D31-2C4CA67137A0" referredColumn="F44DFAD7-B711-88BA-2A6C-695E281FA65F"/>
+</associations>
+</Column>
+<Column name="authority_name2" id="D31B6C32-3C97-B580-037B-35EAD437AEE1">
+<createdBy>sheandefonseka</createdBy>
+<createdTime>2023-05-03 03:12:57 UTC</createdTime>
+<commentInRDBMS><![CDATA[The local authority's name (which is unique)]]></commentInRDBMS>
+<generatorID>D14748F4-C031-9315-703A-378588F8643C</generatorID>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>35</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="93B4BAB8-108F-8026-FB50-5644C361C59C" referredColumn="F44DFAD7-B711-88BA-2A6C-695E281FA65F"/>
 </associations>
 </Column>
 </columns>
@@ -108,6 +125,7 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="2E76BA4A-9F80-FD38-9AE3-6548F7481697"/>
+<colUsage columnID="D31B6C32-3C97-B580-037B-35EAD437AEE1"/>
 </indexColumnUsage>
 </ind_PK_UK>
 <ind_PK_UK id="C8DE5493-381F-2CDC-AFC1-3209CB3BA80A" name="authority_street">
@@ -119,6 +137,17 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="6D75058A-AD01-B799-4CBB-A40500359CA5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BD49BE19-DEA1-E9DA-18C7-3FE42944A163" name="local_auth-street">
+<createdBy>sheandefonseka</createdBy>
+<createdTime>2023-05-03 03:12:57 UTC</createdTime>
+<generatorID>EA60650F-C791-6A98-4EDA-72F0681F0954</generatorID>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D31B6C32-3C97-B580-037B-35EAD437AEE1"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

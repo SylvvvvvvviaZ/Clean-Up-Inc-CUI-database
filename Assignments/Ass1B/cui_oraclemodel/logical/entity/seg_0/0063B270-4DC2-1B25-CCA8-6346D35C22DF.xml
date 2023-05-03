@@ -113,8 +113,9 @@
 <createdBy>sheandefonseka</createdBy>
 <createdTime>2023-05-01 06:37:50 UTC</createdTime>
 <ownerDesignName>cui_oraclemodel</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="F17559B2-635A-3F8E-895F-4E562DD78296" value="true"/>
+<item key="F17559B2-635A-3F8E-895F-4E562DD78296" value="false"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>

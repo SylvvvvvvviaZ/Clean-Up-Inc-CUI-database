@@ -1,21 +1,21 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="contract-waste_type" directorySegmentName="seg_0" id="4453E4D4-8904-7A77-F385-47E39A953782">
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="waste_type-contract_collection_cost" directorySegmentName="seg_0" id="27B63AE2-36D2-B9D4-9B2D-D61156A4206C">
 <createdBy>sheandefonseka</createdBy>
-<createdTime>2023-05-02 13:26:58 UTC</createdTime>
+<createdTime>2023-05-03 03:03:07 UTC</createdTime>
 <ownerDesignName>cui_oraclemodel</ownerDesignName>
 <engineerTo>
 <item key="F17559B2-635A-3F8E-895F-4E562DD78296" value="true"/>
 </engineerTo>
 <sourcePk>25F639B3-6607-0F8E-5036-79C2F634DFEC</sourcePk>
 <identifying>true</identifying>
-<nameOnSource>assigned</nameOnSource>
+<nameOnSource>assigned_to</nameOnSource>
 <nameOnTarget> </nameOnTarget>
 <optionalSource>true</optionalSource>
 <optionalTarget>false</optionalTarget>
 <sourceCardinality>1</sourceCardinality>
 <sourceEntity>3242BEDF-C18F-D06F-FFDF-5EC4D54DD4D8</sourceEntity>
 <targetCardinalityString>*</targetCardinalityString>
-<targetEntity>0F0C4333-F79A-5B68-B0A5-CCB5EE7E4E56</targetEntity>
+<targetEntity>DB7F748E-3BAF-94C1-9036-02CC0E5FEC1F</targetEntity>
 <transferable>true</transferable>
 <deleteRule>NO ACTION</deleteRule>
 </Relation>

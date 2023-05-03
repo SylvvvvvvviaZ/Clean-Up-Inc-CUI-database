@@ -74,38 +74,6 @@
 <dataTypeSize>16</dataTypeSize>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="driver_number" id="B56975CF-6913-496F-5B24-5FA7774C036A">
-<createdBy>sheandefonseka</createdBy>
-<createdTime>2023-05-02 13:28:30 UTC</createdTime>
-<commentInRDBMS><![CDATA[driver number,which is unique.]]></commentInRDBMS>
-<generatorID>8C50A0D5-9AB2-5843-DBCC-E33C32C5AFCE</generatorID>
-<ownerDesignName>cui_oraclemodel</ownerDesignName>
-<engineerTo>
-<item key="F17559B2-635A-3F8E-895F-4E562DD78296" value="true"/>
-</engineerTo>
-<referedAttribute>1FB55687-C9D4-3464-D1D1-885BD79C8CA1</referedAttribute>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>7</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="licence_number" id="4B443A71-1898-2ADA-869D-485CF0A4FAEC">
-<createdBy>sheandefonseka</createdBy>
-<createdTime>2023-05-02 13:28:30 UTC</createdTime>
-<commentInRDBMS><![CDATA[licence number]]></commentInRDBMS>
-<generatorID>8C50A0D5-9AB2-5843-DBCC-E33C32C5AFCE</generatorID>
-<ownerDesignName>cui_oraclemodel</ownerDesignName>
-<engineerTo>
-<item key="F17559B2-635A-3F8E-895F-4E562DD78296" value="true"/>
-</engineerTo>
-<referedAttribute>B794892D-33F5-9F2D-C876-DBC2EA095E8C</referedAttribute>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>9</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="5D81B856-4785-1609-279F-8276D5BD1CD0" name="CONTRACT_WASTE_COAST PK">
@@ -119,8 +87,6 @@
 <usedAttributes>
 <attributeRef>9404CE40-8BC9-F54B-9CEA-63959162D822</attributeRef>
 <attributeRef>1813AB70-B4BC-1FB4-152C-883624661851</attributeRef>
-<attributeRef>B56975CF-6913-496F-5B24-5FA7774C036A</attributeRef>
-<attributeRef>4B443A71-1898-2ADA-869D-485CF0A4FAEC</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

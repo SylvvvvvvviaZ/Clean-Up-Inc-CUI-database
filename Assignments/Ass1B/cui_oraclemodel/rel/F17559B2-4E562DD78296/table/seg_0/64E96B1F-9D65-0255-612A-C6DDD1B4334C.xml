@@ -1,0 +1,96 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="64E96B1F-9D65-0255-612A-C6DDD1B4334C" name="CONTRACT_SUPPLY_COST">
+<createdBy>sheandefonseka</createdBy>
+<createdTime>2023-05-03 03:12:57 UTC</createdTime>
+<generatorID>3AE5F3A8-0754-1560-FF65-4BFE8FB5F65A</generatorID>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="contract_supply_cost" id="0219633F-A325-54B8-5B95-938FB83A6A8E">
+<createdBy>sheandefonseka</createdBy>
+<createdTime>2023-05-03 03:12:57 UTC</createdTime>
+<commentInRDBMS><![CDATA[contract supply coast]]></commentInRDBMS>
+<generatorID>C0B03A38-E162-F177-0512-E3B75B3D7ACB</generatorID>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="contract_number" id="CBE8ADFF-7AA1-0B7A-DE67-2E3736E001DB">
+<createdBy>sheandefonseka</createdBy>
+<createdTime>2023-05-03 03:12:57 UTC</createdTime>
+<commentInRDBMS><![CDATA[contract number, which is unique]]></commentInRDBMS>
+<generatorID>F3F65B68-3E31-6DA2-8264-8F99C70F6729</generatorID>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="5CCEA50E-4DF8-C630-B077-518D7DDF947A" referredColumn="A51337AD-CC6D-5E75-9914-D53ED9D11BF7"/>
+</associations>
+</Column>
+<Column name="bin_type_id" id="806819AD-5BDA-5C51-DC8D-339B036501DF">
+<createdBy>sheandefonseka</createdBy>
+<createdTime>2023-05-03 03:12:57 UTC</createdTime>
+<commentInRDBMS><![CDATA[Bin Type Id (Surrogate PK)]]></commentInRDBMS>
+<generatorID>C8DCB4F9-1859-302D-33B0-257A97340DAE</generatorID>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9BB8446E-0601-16BF-967F-068F8C5CB893" referredColumn="1040B7A4-6F25-EEA1-F1F3-7193D72D3714"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="38999B0E-2D29-AC37-9820-B14B554C9462" name="CONTRACT_SUPPLY_COAST_PK">
+<createdBy>sheandefonseka</createdBy>
+<createdTime>2023-05-03 03:12:57 UTC</createdTime>
+<generatorID>6F52246B-F1CE-CE87-39B6-F85D746CB2DF</generatorID>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CBE8ADFF-7AA1-0B7A-DE67-2E3736E001DB"/>
+<colUsage columnID="806819AD-5BDA-5C51-DC8D-339B036501DF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8200A1F9-3509-D433-B2A5-EB0189A22EFD" name="bin_type-contract_supply_cost">
+<createdBy>sheandefonseka</createdBy>
+<createdTime>2023-05-03 03:12:57 UTC</createdTime>
+<generatorID>F355C0EA-E6EA-E177-09C7-6F0F5503EC2C</generatorID>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="806819AD-5BDA-5C51-DC8D-339B036501DF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B5D6E182-826B-0E1C-16C1-4922222D26B5" name="Relation_10">
+<createdBy>sheandefonseka</createdBy>
+<createdTime>2023-05-03 03:12:57 UTC</createdTime>
+<generatorID>FA23A1A3-5193-3C3D-E86F-1EB4499B6F2F</generatorID>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CBE8ADFF-7AA1-0B7A-DE67-2E3736E001DB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

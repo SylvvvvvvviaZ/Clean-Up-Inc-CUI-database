@@ -1,0 +1,77 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="2CBD10DD-4A52-3C47-1FDE-CD6CF7B95D23" name="driver-truck">
+<createdBy>sheandefonseka</createdBy>
+<createdTime>2023-05-03 03:12:57 UTC</createdTime>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="truck_vin" id="19296950-355C-E940-D7D6-9054EED0D4C4">
+<createdBy>sheandefonseka</createdBy>
+<createdTime>2023-05-03 03:12:57 UTC</createdTime>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="352C84AC-EA4E-3CF4-05D7-CDDDB975D28E" referredColumn="BBCED548-0CCF-A00E-DE35-F9FED3C600AC"/>
+</associations>
+</Column>
+<Column name="driver_number" id="F67457DA-9856-A7B2-8DA6-F8B3BA8A7E67">
+<createdBy>sheandefonseka</createdBy>
+<createdTime>2023-05-03 03:12:57 UTC</createdTime>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A7D6D974-7E9C-F038-41E9-43BBCF963AEC" referredColumn="9A32C78B-12C1-AE53-FFA4-8DF23507F51D"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D56ACD5E-0865-5C5F-91EA-21A62CE165EA" name="driver-truck_PK">
+<createdBy>sheandefonseka</createdBy>
+<createdTime>2023-05-03 03:12:57 UTC</createdTime>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="19296950-355C-E940-D7D6-9054EED0D4C4"/>
+<colUsage columnID="F67457DA-9856-A7B2-8DA6-F8B3BA8A7E67"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="01587EA9-7485-C1E4-5039-92B82241416E" name="driver-truck_TRUCK_FK">
+<createdBy>sheandefonseka</createdBy>
+<createdTime>2023-05-03 03:12:57 UTC</createdTime>
+<generatorID>4541DF8E-2854-C80E-8205-0894BD15BECE</generatorID>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="19296950-355C-E940-D7D6-9054EED0D4C4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F551AB33-DF7C-3A02-6080-68E49E3D9660" name="driver-truck_DRIVER_FK">
+<createdBy>sheandefonseka</createdBy>
+<createdTime>2023-05-03 03:12:57 UTC</createdTime>
+<generatorID>4541DF8E-2854-C80E-8205-0894BD15BECE</generatorID>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F67457DA-9856-A7B2-8DA6-F8B3BA8A7E67"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

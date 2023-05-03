@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="7D723B5A-F312-82BF-4B48-6F9C17E23C50" containerWithKeyObject="9967AEB8-FC85-A376-A016-AC90BC0EC5F4" localFKIndex="FDE34A12-E368-D4D4-AA2E-3925A2310132" name="driver_collector-contract_waste_cost">
+<createdBy>sheandefonseka</createdBy>
+<createdTime>2023-05-03 03:12:57 UTC</createdTime>
+<generatorID>8C50A0D5-9AB2-5843-DBCC-E33C32C5AFCE</generatorID>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<referredTableLongName>DRIVER_COLLECTOR</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>B19AFEB7-EF49-20BD-90D0-838D42AD2A3F</referredTableID>
+<keyObject>DCA0A515-9EE9-4F03-EDE3-A20245C8ABD9</keyObject>
+<referredKeyID>DCA0A515-9EE9-4F03-EDE3-A20245C8ABD9</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>date_of_collection</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

@@ -1,0 +1,87 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="74E2D9D4-F54F-1AA9-3C59-490CA6901AEC" name="PROPERTY">
+<createdBy>sheandefonseka</createdBy>
+<createdTime>2023-05-03 03:12:57 UTC</createdTime>
+<generatorID>F8A38D21-21DB-1462-B774-A703B744D541</generatorID>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="street_id" id="C321C730-1655-A1D0-C27F-5189D268D3B7">
+<createdBy>sheandefonseka</createdBy>
+<createdTime>2023-05-03 03:12:57 UTC</createdTime>
+<commentInRDBMS><![CDATA[This is the street/road id.]]></commentInRDBMS>
+<generatorID>1CF88FD2-D371-EDC4-4D6B-33D5B6E62E68</generatorID>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="41F1D9E2-2524-1564-6D61-533F6D5A150E" referredColumn="2E76BA4A-9F80-FD38-9AE3-6548F7481697"/>
+</associations>
+</Column>
+<Column name="property_street_number" id="48D913F6-E7F7-A6C2-D045-61D621ED2D8E">
+<createdBy>sheandefonseka</createdBy>
+<createdTime>2023-05-03 03:12:57 UTC</createdTime>
+<commentInRDBMS><![CDATA[property_street_number]]></commentInRDBMS>
+<generatorID>91BE140B-3559-5F1B-FA7C-A7874BB0B122</generatorID>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="authority_name" id="FA9C0348-F76C-378F-A9AC-455D4842652A">
+<createdBy>sheandefonseka</createdBy>
+<createdTime>2023-05-03 03:12:57 UTC</createdTime>
+<commentInRDBMS><![CDATA[The local authority's name (which is unique)]]></commentInRDBMS>
+<generatorID>D989FB5E-E1A9-C14E-290A-3E5AE22CE526</generatorID>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>35</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="41F1D9E2-2524-1564-6D61-533F6D5A150E" referredColumn="D31B6C32-3C97-B580-037B-35EAD437AEE1"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="92DEEA2B-41BA-F3F7-2A9B-157EC4B0A028" name="PROPERTY_PK">
+<createdBy>sheandefonseka</createdBy>
+<createdTime>2023-05-03 03:12:57 UTC</createdTime>
+<generatorID>2CB72BD2-A878-B14D-6257-8874267920B2</generatorID>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="48D913F6-E7F7-A6C2-D045-61D621ED2D8E"/>
+<colUsage columnID="C321C730-1655-A1D0-C27F-5189D268D3B7"/>
+<colUsage columnID="FA9C0348-F76C-378F-A9AC-455D4842652A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="166935B4-D1AB-03C9-DEC6-B9270E6A7AAE" name="street_property">
+<createdBy>sheandefonseka</createdBy>
+<createdTime>2023-05-03 03:12:57 UTC</createdTime>
+<generatorID>5BDB458E-EFF5-E5FF-0B8D-BB75D5139F2D</generatorID>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C321C730-1655-A1D0-C27F-5189D268D3B7"/>
+<colUsage columnID="FA9C0348-F76C-378F-A9AC-455D4842652A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

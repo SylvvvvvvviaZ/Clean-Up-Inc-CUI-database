@@ -1,0 +1,66 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B19AFEB7-EF49-20BD-90D0-838D42AD2A3F" name="DRIVER_COLLECTOR">
+<createdBy>sheandefonseka</createdBy>
+<createdTime>2023-05-03 03:12:57 UTC</createdTime>
+<generatorID>7FD67F22-C9F3-CAC2-F5FC-3EFC881E656A</generatorID>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="date_of_collection" id="48A5E95F-FEAD-E517-EDE1-9DB2C1086CB6">
+<createdBy>sheandefonseka</createdBy>
+<createdTime>2023-05-03 03:12:57 UTC</createdTime>
+<commentInRDBMS><![CDATA[The date of collection for the bins.]]></commentInRDBMS>
+<generatorID>D272D98E-1247-DC34-7D21-35E49ECD7494</generatorID>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="driver_number" id="2D08B103-289E-F23D-0FBD-55E0D6A838A2">
+<createdBy>sheandefonseka</createdBy>
+<createdTime>2023-05-03 03:12:57 UTC</createdTime>
+<commentInRDBMS><![CDATA[driver number,which is unique.]]></commentInRDBMS>
+<generatorID>1FB55687-C9D4-3464-D1D1-885BD79C8CA1</generatorID>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4166D80E-9F87-787F-B4C5-175DF5811D0A" referredColumn="9A32C78B-12C1-AE53-FFA4-8DF23507F51D"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="DCA0A515-9EE9-4F03-EDE3-A20245C8ABD9" name="DRIVER_COLLECTION_PK">
+<createdBy>sheandefonseka</createdBy>
+<createdTime>2023-05-03 03:12:57 UTC</createdTime>
+<generatorID>4D264BAB-1561-B36E-DBEA-C430D7398C8E</generatorID>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="48A5E95F-FEAD-E517-EDE1-9DB2C1086CB6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C6AA4A86-3541-D2D0-A25B-6856829BAEC5" name="driver-driver_collector">
+<createdBy>sheandefonseka</createdBy>
+<createdTime>2023-05-03 03:12:57 UTC</createdTime>
+<generatorID>AEABE323-7B2C-B7A6-9DA1-B9D55ED21E83</generatorID>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2D08B103-289E-F23D-0FBD-55E0D6A838A2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

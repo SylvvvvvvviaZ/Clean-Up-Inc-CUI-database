@@ -71,20 +71,6 @@
 <dataTypeSize>50</dataTypeSize>
 <ownDataTypeParameters>50,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="truck_made_1" id="59CF080A-F18B-28B4-6992-3375253BAD77">
-<createdBy>a726928</createdBy>
-<createdTime>2023-05-02 12:18:06 UTC</createdTime>
-<commentInRDBMS><![CDATA[truck made]]></commentInRDBMS>
-<ownerDesignName>cui_oraclemodel</ownerDesignName>
-<engineerTo>
-<item key="F17559B2-635A-3F8E-895F-4E562DD78296" value="true"/>
-</engineerTo>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>50</dataTypeSize>
-<ownDataTypeParameters>50,,</ownDataTypeParameters>
-</Attribute>
 <Attribute name="truck_year" id="1D304471-8D8A-3591-E954-1438EF043EDE">
 <createdBy>a726928</createdBy>
 <createdTime>2023-05-02 12:18:35 UTC</createdTime>

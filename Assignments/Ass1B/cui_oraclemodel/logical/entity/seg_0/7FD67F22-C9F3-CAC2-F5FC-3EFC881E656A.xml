@@ -44,22 +44,6 @@
 <dataTypePrecision>7</dataTypePrecision>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="licence_number" id="B794892D-33F5-9F2D-C876-DBC2EA095E8C">
-<createdBy>sheandefonseka</createdBy>
-<createdTime>2023-05-02 13:28:30 UTC</createdTime>
-<commentInRDBMS><![CDATA[licence number]]></commentInRDBMS>
-<generatorID>AEABE323-7B2C-B7A6-9DA1-B9D55ED21E83</generatorID>
-<ownerDesignName>cui_oraclemodel</ownerDesignName>
-<engineerTo>
-<item key="F17559B2-635A-3F8E-895F-4E562DD78296" value="true"/>
-</engineerTo>
-<referedAttribute>4CA6B06B-4A74-CB6A-86A8-A6CDE8D09A67</referedAttribute>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>9</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="4D264BAB-1561-B36E-DBEA-C430D7398C8E" name="DRIVER_COLLECTION PK">
@@ -72,8 +56,6 @@
 <pk>true</pk>
 <usedAttributes>
 <attributeRef>D272D98E-1247-DC34-7D21-35E49ECD7494</attributeRef>
-<attributeRef>1FB55687-C9D4-3464-D1D1-885BD79C8CA1</attributeRef>
-<attributeRef>B794892D-33F5-9F2D-C876-DBC2EA095E8C</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

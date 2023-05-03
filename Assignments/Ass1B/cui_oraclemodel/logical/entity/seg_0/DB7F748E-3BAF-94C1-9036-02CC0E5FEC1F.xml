@@ -1,7 +1,7 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="9D3610D3-A501-84F3-2C53-AC163AC6D6AB" name="DRIVER">
-<createdBy>a726928</createdBy>
-<createdTime>2023-05-02 12:28:03 UTC</createdTime>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="DB7F748E-3BAF-94C1-9036-02CC0E5FEC1F" name="CONTRACT_COLLECTION_COST">
+<createdBy>sheandefonseka</createdBy>
+<createdTime>2023-05-03 03:01:37 UTC</createdTime>
 <ownerDesignName>cui_oraclemodel</ownerDesignName>
 <engineerTo>
 <item key="F17559B2-635A-3F8E-895F-4E562DD78296" value="true"/>
@@ -15,62 +15,66 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="driver_number" id="CD97969F-3F92-EA23-3956-CD9B8CB72361">
-<createdBy>a726928</createdBy>
-<createdTime>2023-05-02 12:28:18 UTC</createdTime>
-<commentInRDBMS><![CDATA[driver number,which is unique.]]></commentInRDBMS>
-<ownerDesignName>cui_oraclemodel</ownerDesignName>
-<engineerTo>
-<item key="F17559B2-635A-3F8E-895F-4E562DD78296" value="true"/>
-</engineerTo>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>7</dataTypePrecision>
-<ownDataTypeParameters>,7,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="driver_contract_number" id="696B6B97-2BCC-8B1E-40CC-3608D10498D4">
-<createdBy>a726928</createdBy>
-<createdTime>2023-05-02 12:29:37 UTC</createdTime>
-<commentInRDBMS><![CDATA[driver contract number]]></commentInRDBMS>
-<ownerDesignName>cui_oraclemodel</ownerDesignName>
-<engineerTo>
-<item key="F17559B2-635A-3F8E-895F-4E562DD78296" value="true"/>
-</engineerTo>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>7</dataTypePrecision>
-<ownDataTypeParameters>,7,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="licence_number" id="4CA6B06B-4A74-CB6A-86A8-A6CDE8D09A67">
+<Attribute name="contract_collection_cost" id="A24EA64F-BDBC-5D40-E5C5-5CCD7DC2A8EF">
 <createdBy>sheandefonseka</createdBy>
-<createdTime>2023-05-02 13:17:33 UTC</createdTime>
-<commentInRDBMS><![CDATA[licence number]]></commentInRDBMS>
-<generatorID>D2687C81-F791-266D-3949-F081BB888DDC</generatorID>
+<createdTime>2023-05-03 03:01:53 UTC</createdTime>
+<commentInRDBMS><![CDATA[The contract waste collection cost.]]></commentInRDBMS>
 <ownerDesignName>cui_oraclemodel</ownerDesignName>
 <engineerTo>
 <item key="F17559B2-635A-3F8E-895F-4E562DD78296" value="true"/>
 </engineerTo>
-<referedAttribute>F1005863-8630-0C3C-69ED-8872C1C8BB80</referedAttribute>
+<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>9</dataTypePrecision>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="waste_type_id" id="A73A3FAD-F4C6-DC59-E8E6-7587AE5358D3">
+<createdBy>sheandefonseka</createdBy>
+<createdTime>2023-05-03 03:03:55 UTC</createdTime>
+<commentInRDBMS><![CDATA[aste type id, which is unique]]></commentInRDBMS>
+<generatorID>27B63AE2-36D2-B9D4-9B2D-D61156A4206C</generatorID>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="F17559B2-635A-3F8E-895F-4E562DD78296" value="true"/>
+</engineerTo>
+<referedAttribute>47F665F4-9F8C-8E86-8DBF-567D908E6C71</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="contract_number" id="B9C4E898-137D-EDA2-32B1-3CBBBE149839">
+<createdBy>sheandefonseka</createdBy>
+<createdTime>2023-05-03 03:05:00 UTC</createdTime>
+<commentInRDBMS><![CDATA[contract number, which is unique]]></commentInRDBMS>
+<generatorID>382CB574-20DC-8A43-7735-C1DDF64F9FF3</generatorID>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="F17559B2-635A-3F8E-895F-4E562DD78296" value="true"/>
+</engineerTo>
+<referedAttribute>FDFA04C2-D307-82E2-DFE4-2C9FBFD05DA5</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
-<identifier id="2A64D7DD-504D-B660-D0B4-C04B29ECB6BA" name="DRIVER PK">
-<createdBy>a726928</createdBy>
-<createdTime>2023-05-02 12:28:52 UTC</createdTime>
+<identifier id="FC2FF30C-55BE-64FA-24D7-65AA3D5B816E" name="CONTRACT_COLLECTION_COST PK">
+<createdBy>sheandefonseka</createdBy>
+<createdTime>2023-05-03 03:05:27 UTC</createdTime>
 <ownerDesignName>cui_oraclemodel</ownerDesignName>
 <engineerTo>
 <item key="F17559B2-635A-3F8E-895F-4E562DD78296" value="true"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
-<attributeRef>CD97969F-3F92-EA23-3956-CD9B8CB72361</attributeRef>
+<attributeRef>A73A3FAD-F4C6-DC59-E8E6-7587AE5358D3</attributeRef>
+<attributeRef>B9C4E898-137D-EDA2-32B1-3CBBBE149839</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

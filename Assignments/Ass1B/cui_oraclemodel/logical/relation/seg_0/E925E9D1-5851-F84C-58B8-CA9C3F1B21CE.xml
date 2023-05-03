@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Relation_13" directorySegmentName="seg_0" id="E925E9D1-5851-F84C-58B8-CA9C3F1B21CE">
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="property-owner" directorySegmentName="seg_0" id="E925E9D1-5851-F84C-58B8-CA9C3F1B21CE">
 <createdBy>sheandefonseka</createdBy>
 <createdTime>2023-05-01 13:57:10 UTC</createdTime>
 <ownerDesignName>cui_oraclemodel</ownerDesignName>
