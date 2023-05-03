@@ -1,0 +1,111 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="EEE74CDE-1353-03AF-DA59-A63B5DFF325C" name="Relation_13">
+<createdBy>sheandefonseka</createdBy>
+<createdTime>2023-05-03 03:12:57 UTC</createdTime>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="property_street_number" id="4A68CA09-9EB6-8C99-6400-9079F3843DE6">
+<createdBy>sheandefonseka</createdBy>
+<createdTime>2023-05-03 03:12:57 UTC</createdTime>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="958BD15F-BC3D-5D76-C018-E130270CD3CF" referredColumn="48D913F6-E7F7-A6C2-D045-61D621ED2D8E"/>
+</associations>
+</Column>
+<Column name="street_id" id="4F2802E6-554C-3B19-9A31-C88FCB415327">
+<createdBy>sheandefonseka</createdBy>
+<createdTime>2023-05-03 03:12:57 UTC</createdTime>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="958BD15F-BC3D-5D76-C018-E130270CD3CF" referredColumn="C321C730-1655-A1D0-C27F-5189D268D3B7"/>
+</associations>
+</Column>
+<Column name="authority_name" id="D444250C-E3CB-1047-B126-64DB571DA21E">
+<createdBy>sheandefonseka</createdBy>
+<createdTime>2023-05-03 03:12:57 UTC</createdTime>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>35</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="958BD15F-BC3D-5D76-C018-E130270CD3CF" referredColumn="FA9C0348-F76C-378F-A9AC-455D4842652A"/>
+</associations>
+</Column>
+<Column name="owner_id" id="982719F9-BB32-69BA-11A7-17D39A2A1751">
+<createdBy>sheandefonseka</createdBy>
+<createdTime>2023-05-03 03:12:57 UTC</createdTime>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D0DB2A99-A091-EC6D-85BF-CE269AE93DF0" referredColumn="8EA4DB1C-5403-C9FD-9533-5CB23B9860BA"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="BBB1565C-B9F9-9786-09D2-3360205DBAD1" name="Relation_13_PK">
+<createdBy>sheandefonseka</createdBy>
+<createdTime>2023-05-03 03:12:57 UTC</createdTime>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4A68CA09-9EB6-8C99-6400-9079F3843DE6"/>
+<colUsage columnID="4F2802E6-554C-3B19-9A31-C88FCB415327"/>
+<colUsage columnID="D444250C-E3CB-1047-B126-64DB571DA21E"/>
+<colUsage columnID="982719F9-BB32-69BA-11A7-17D39A2A1751"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6D6049D5-09F4-A315-B1A7-AF848ADDD590" name="Relation_13_PROPERTY_FK">
+<createdBy>sheandefonseka</createdBy>
+<createdTime>2023-05-03 03:12:57 UTC</createdTime>
+<generatorID>E925E9D1-5851-F84C-58B8-CA9C3F1B21CE</generatorID>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4A68CA09-9EB6-8C99-6400-9079F3843DE6"/>
+<colUsage columnID="4F2802E6-554C-3B19-9A31-C88FCB415327"/>
+<colUsage columnID="D444250C-E3CB-1047-B126-64DB571DA21E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3B9A08F3-4D52-19D1-D977-242F961C2BC0" name="Relation_13_OWNER_FK">
+<createdBy>sheandefonseka</createdBy>
+<createdTime>2023-05-03 03:12:57 UTC</createdTime>
+<generatorID>E925E9D1-5851-F84C-58B8-CA9C3F1B21CE</generatorID>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="982719F9-BB32-69BA-11A7-17D39A2A1751"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

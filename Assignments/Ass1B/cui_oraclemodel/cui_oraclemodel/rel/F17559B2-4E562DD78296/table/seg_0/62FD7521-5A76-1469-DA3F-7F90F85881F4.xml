@@ -1,0 +1,97 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="62FD7521-5A76-1469-DA3F-7F90F85881F4" name="CONTRACT_COLLECTION_COST">
+<createdBy>sheandefonseka</createdBy>
+<createdTime>2023-05-03 03:12:57 UTC</createdTime>
+<generatorID>DB7F748E-3BAF-94C1-9036-02CC0E5FEC1F</generatorID>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="contract_collection_cost" id="3A7DE9F8-0981-DB4A-3FFA-531111CF82E7">
+<createdBy>sheandefonseka</createdBy>
+<createdTime>2023-05-03 03:12:57 UTC</createdTime>
+<commentInRDBMS><![CDATA[The contract waste collection cost.]]></commentInRDBMS>
+<generatorID>A24EA64F-BDBC-5D40-E5C5-5CCD7DC2A8EF</generatorID>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="waste_type_id" id="A32C4C81-2242-1F7A-C80E-CFF9ADE11C14">
+<createdBy>sheandefonseka</createdBy>
+<createdTime>2023-05-03 03:12:57 UTC</createdTime>
+<commentInRDBMS><![CDATA[aste type id, which is unique]]></commentInRDBMS>
+<generatorID>A73A3FAD-F4C6-DC59-E8E6-7587AE5358D3</generatorID>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="AA89726D-6B49-C16E-AB4C-4598BD67BF7E" referredColumn="DAB19CB9-F68A-6873-342F-8D14AEC49463"/>
+</associations>
+</Column>
+<Column name="contract_number" id="EB119805-8BC6-3B3B-14C6-56FEA981F2CC">
+<createdBy>sheandefonseka</createdBy>
+<createdTime>2023-05-03 03:12:57 UTC</createdTime>
+<commentInRDBMS><![CDATA[contract number, which is unique]]></commentInRDBMS>
+<generatorID>B9C4E898-137D-EDA2-32B1-3CBBBE149839</generatorID>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0F863F9B-840F-B469-966C-0820766C4349" referredColumn="A51337AD-CC6D-5E75-9914-D53ED9D11BF7"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="137B5DDA-930B-3B48-8E00-D707DA5EFBBD" name="CONTRACT_COLLECTION_COST_PK">
+<createdBy>sheandefonseka</createdBy>
+<createdTime>2023-05-03 03:12:57 UTC</createdTime>
+<generatorID>FC2FF30C-55BE-64FA-24D7-65AA3D5B816E</generatorID>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A32C4C81-2242-1F7A-C80E-CFF9ADE11C14"/>
+<colUsage columnID="EB119805-8BC6-3B3B-14C6-56FEA981F2CC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="14F9AD21-E8B4-D2CC-F637-3081F329168E" name="contract-contract_collection_cost">
+<createdBy>sheandefonseka</createdBy>
+<createdTime>2023-05-03 03:12:57 UTC</createdTime>
+<generatorID>382CB574-20DC-8A43-7735-C1DDF64F9FF3</generatorID>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EB119805-8BC6-3B3B-14C6-56FEA981F2CC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9F5284E2-C918-8ACB-DFCC-28EC19AB07A4" name="waste_type-contract_collection_cost">
+<createdBy>sheandefonseka</createdBy>
+<createdTime>2023-05-03 03:12:57 UTC</createdTime>
+<generatorID>27B63AE2-36D2-B9D4-9B2D-D61156A4206C</generatorID>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A32C4C81-2242-1F7A-C80E-CFF9ADE11C14"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

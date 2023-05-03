@@ -1,0 +1,145 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="B0234C6B-0240-4445-0681-95D915294EF7" name="BIN">
+<createdBy>a726928</createdBy>
+<createdTime>2023-05-01 08:15:20 UTC</createdTime>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="F17559B2-635A-3F8E-895F-4E562DD78296" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="bin_rfid_tag" id="55A07B22-BCC5-A45B-CF6D-667A69BE9DEA">
+<createdBy>a726928</createdBy>
+<createdTime>2023-05-01 08:15:37 UTC</createdTime>
+<commentInRDBMS><![CDATA[bin rfid tag, which is unique]]></commentInRDBMS>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="F17559B2-635A-3F8E-895F-4E562DD78296" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>16</dataTypeSize>
+<ownDataTypeParameters>16,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="bin_supply_date" id="88DBCD59-5A4E-D6CE-B43C-BC1E2CCE40C4">
+<createdBy>a726928</createdBy>
+<createdTime>2023-05-01 08:21:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[bin supply date]]></commentInRDBMS>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="F17559B2-635A-3F8E-895F-4E562DD78296" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="bin_replace_reason" id="BBDC45B1-7F6D-3364-8BC2-74E4833BAE9F">
+<createdBy>a726928</createdBy>
+<createdTime>2023-05-01 08:22:26 UTC</createdTime>
+<commentInRDBMS><![CDATA[about bin replace reason]]></commentInRDBMS>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="F17559B2-635A-3F8E-895F-4E562DD78296" value="true"/>
+</engineerTo>
+<constraintName>chk_reason</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<listOfValues>
+<valueDef value="B" description="Bin Failure(fair use eg. old age)"/>
+<valueDef value="D" description="Damage by owner"/>
+<valueDef value="DP" description="Damaged during pickup of waste"/>
+<valueDef value="S" description="Stolen"/>
+</listOfValues>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="property_street_number" id="4630BC8A-C49F-B164-3D00-456D5B7EE1D0">
+<createdBy>sheandefonseka</createdBy>
+<createdTime>2023-05-01 14:01:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[property_street_number]]></commentInRDBMS>
+<generatorID>8D6981B4-1015-AB67-5865-5FAF727D6A98</generatorID>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="F17559B2-635A-3F8E-895F-4E562DD78296" value="true"/>
+</engineerTo>
+<referedAttribute>91BE140B-3559-5F1B-FA7C-A7874BB0B122</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="street_id" id="D18598A9-3C5C-73D4-8AE9-D70398B41C32">
+<createdBy>sheandefonseka</createdBy>
+<createdTime>2023-05-01 14:05:00 UTC</createdTime>
+<commentInRDBMS><![CDATA[This is the street/road id.]]></commentInRDBMS>
+<generatorID>8D6981B4-1015-AB67-5865-5FAF727D6A98</generatorID>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="F17559B2-635A-3F8E-895F-4E562DD78296" value="true"/>
+</engineerTo>
+<referedAttribute>1CF88FD2-D371-EDC4-4D6B-33D5B6E62E68</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="authority_name" id="0A6ED685-99D5-3325-A9AA-12F3F31105B3">
+<createdBy>sheandefonseka</createdBy>
+<createdTime>2023-05-01 14:05:00 UTC</createdTime>
+<commentInRDBMS><![CDATA[The local authority's name (which is unique)]]></commentInRDBMS>
+<generatorID>8D6981B4-1015-AB67-5865-5FAF727D6A98</generatorID>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="F17559B2-635A-3F8E-895F-4E562DD78296" value="true"/>
+</engineerTo>
+<referedAttribute>D989FB5E-E1A9-C14E-290A-3E5AE22CE526</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>45</dataTypeSize>
+<ownDataTypeParameters>45,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="bin_type_id" id="076D3D40-C973-1AD8-F7DB-86272F5EDB07">
+<createdBy>sheandefonseka</createdBy>
+<createdTime>2023-05-02 13:12:33 UTC</createdTime>
+<commentInRDBMS><![CDATA[Bin Type Id (Surrogate PK)]]></commentInRDBMS>
+<generatorID>07125586-E816-EDBB-8A98-AB5CAD8A57B7</generatorID>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="F17559B2-635A-3F8E-895F-4E562DD78296" value="true"/>
+</engineerTo>
+<referedAttribute>EB5E66FB-1322-04FE-FB73-9B771C5102F7</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="D5CA041C-1F3E-7303-8245-0224BAB7A2FE" name="BIN PK">
+<createdBy>a726928</createdBy>
+<createdTime>2023-05-01 08:18:59 UTC</createdTime>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="F17559B2-635A-3F8E-895F-4E562DD78296" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>55A07B22-BCC5-A45B-CF6D-667A69BE9DEA</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

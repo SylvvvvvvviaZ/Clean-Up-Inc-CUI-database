@@ -1,0 +1,76 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="441B1A8F-1873-DAF5-744D-AD5E99DE1BCB" name="contract-driver_collector">
+<createdBy>sheandefonseka</createdBy>
+<createdTime>2023-05-03 03:12:57 UTC</createdTime>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="contract_number" id="F2BD7BFA-E914-A670-85D0-25DFDC3D549B">
+<createdBy>sheandefonseka</createdBy>
+<createdTime>2023-05-03 03:12:57 UTC</createdTime>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D6A552D9-8202-414F-6C3B-5282E634455F" referredColumn="A51337AD-CC6D-5E75-9914-D53ED9D11BF7"/>
+</associations>
+</Column>
+<Column name="date_of_collection" id="58E242D4-1E09-A67D-E683-5E108F3FD809">
+<createdBy>sheandefonseka</createdBy>
+<createdTime>2023-05-03 03:12:57 UTC</createdTime>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9465E021-E851-2171-5340-C561B7102F43" referredColumn="48A5E95F-FEAD-E517-EDE1-9DB2C1086CB6"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="792A300B-3834-E13A-F227-F25874C2119D" name="contract-driver_collector_PK">
+<createdBy>sheandefonseka</createdBy>
+<createdTime>2023-05-03 03:12:57 UTC</createdTime>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F2BD7BFA-E914-A670-85D0-25DFDC3D549B"/>
+<colUsage columnID="58E242D4-1E09-A67D-E683-5E108F3FD809"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1437BA36-2A39-07EE-2ED5-B74029D4C0EF" name="contract-driver_collector_CONTRACT_FK">
+<createdBy>sheandefonseka</createdBy>
+<createdTime>2023-05-03 03:12:57 UTC</createdTime>
+<generatorID>E9B4D9CA-80AE-1270-7B05-6B35F9E1CE53</generatorID>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F2BD7BFA-E914-A670-85D0-25DFDC3D549B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4EEBEE7C-8B7C-3ECA-2CA4-0B8247B68D2D" name="contract-driver_collector_DRIVER_COLLECTOR_FK">
+<createdBy>sheandefonseka</createdBy>
+<createdTime>2023-05-03 03:12:57 UTC</createdTime>
+<generatorID>E9B4D9CA-80AE-1270-7B05-6B35F9E1CE53</generatorID>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="58E242D4-1E09-A67D-E683-5E108F3FD809"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

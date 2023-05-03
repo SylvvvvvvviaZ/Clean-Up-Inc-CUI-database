@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="driver_collector-contract_waste_cost" directorySegmentName="seg_0" id="8C50A0D5-9AB2-5843-DBCC-E33C32C5AFCE">
+<createdBy>sheandefonseka</createdBy>
+<createdTime>2023-05-02 13:24:32 UTC</createdTime>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="F17559B2-635A-3F8E-895F-4E562DD78296" value="true"/>
+</engineerTo>
+<sourcePk>4D264BAB-1561-B36E-DBEA-C430D7398C8E</sourcePk>
+<identifying>true</identifying>
+<nameOnSource>contains</nameOnSource>
+<nameOnTarget> </nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>7FD67F22-C9F3-CAC2-F5FC-3EFC881E656A</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>A9B7BBF2-57A4-26B4-6C27-539E49885FBD</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

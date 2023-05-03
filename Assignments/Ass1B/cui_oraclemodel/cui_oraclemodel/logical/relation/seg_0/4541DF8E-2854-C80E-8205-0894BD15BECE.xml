@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="driver-truck" directorySegmentName="seg_0" id="4541DF8E-2854-C80E-8205-0894BD15BECE">
+<createdBy>sheandefonseka</createdBy>
+<createdTime>2023-05-02 13:22:22 UTC</createdTime>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="F17559B2-635A-3F8E-895F-4E562DD78296" value="true"/>
+</engineerTo>
+<identifying>false</identifying>
+<nameOnSource>assigned_to</nameOnSource>
+<nameOnTarget> </nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>A9956EA8-B804-5E5B-842A-808E9D77D48E</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>9D3610D3-A501-84F3-2C53-AC163AC6D6AB</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

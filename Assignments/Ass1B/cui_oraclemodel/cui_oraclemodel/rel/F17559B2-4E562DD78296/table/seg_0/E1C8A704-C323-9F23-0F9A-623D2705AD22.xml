@@ -1,0 +1,163 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E1C8A704-C323-9F23-0F9A-623D2705AD22" name="BIN">
+<createdBy>sheandefonseka</createdBy>
+<createdTime>2023-05-03 03:12:57 UTC</createdTime>
+<generatorID>B0234C6B-0240-4445-0681-95D915294EF7</generatorID>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="bin_rfid_tag" id="8F91EF6B-472A-BE64-0CE4-3F8CD9E24EE9">
+<createdBy>sheandefonseka</createdBy>
+<createdTime>2023-05-03 03:12:57 UTC</createdTime>
+<commentInRDBMS><![CDATA[bin rfid tag, which is unique]]></commentInRDBMS>
+<generatorID>55A07B22-BCC5-A45B-CF6D-667A69BE9DEA</generatorID>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>16</dataTypeSize>
+<ownDataTypeParameters>16,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="bin_supply_date" id="D5BD73B5-51DF-043E-7007-803090A4785B">
+<createdBy>sheandefonseka</createdBy>
+<createdTime>2023-05-03 03:12:57 UTC</createdTime>
+<commentInRDBMS><![CDATA[bin supply date]]></commentInRDBMS>
+<generatorID>88DBCD59-5A4E-D6CE-B43C-BC1E2CCE40C4</generatorID>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="bin_replace_reason" id="E27A91A7-E062-E637-A79F-57248CEE6FAD">
+<createdBy>sheandefonseka</createdBy>
+<createdTime>2023-05-03 03:12:57 UTC</createdTime>
+<commentInRDBMS><![CDATA[about bin replace reason]]></commentInRDBMS>
+<generatorID>BBDC45B1-7F6D-3364-8BC2-74E4833BAE9F</generatorID>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<constraintName>chk_reason</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<listOfValues>
+<valueDef value="B" description="Bin Failure(fair use eg. old age)"/>
+<valueDef value="D" description="Damage by owner"/>
+<valueDef value="DP" description="Damaged during pickup of waste"/>
+<valueDef value="S" description="Stolen"/>
+</listOfValues>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="property_street_number" id="FDCC6202-D6F6-56FB-4E86-9A62B0CF5455">
+<createdBy>sheandefonseka</createdBy>
+<createdTime>2023-05-03 03:12:57 UTC</createdTime>
+<commentInRDBMS><![CDATA[property_street_number]]></commentInRDBMS>
+<generatorID>4630BC8A-C49F-B164-3D00-456D5B7EE1D0</generatorID>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="AF785188-E2D7-AFAD-98EC-75D162F44B4B" referredColumn="48D913F6-E7F7-A6C2-D045-61D621ED2D8E"/>
+</associations>
+</Column>
+<Column name="street_id" id="78BA9864-5F83-FE98-B7B3-DCCA88FC4E46">
+<createdBy>sheandefonseka</createdBy>
+<createdTime>2023-05-03 03:12:57 UTC</createdTime>
+<commentInRDBMS><![CDATA[This is the street/road id.]]></commentInRDBMS>
+<generatorID>D18598A9-3C5C-73D4-8AE9-D70398B41C32</generatorID>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="AF785188-E2D7-AFAD-98EC-75D162F44B4B" referredColumn="C321C730-1655-A1D0-C27F-5189D268D3B7"/>
+</associations>
+</Column>
+<Column name="authority_name" id="1F7F1A01-8219-EE20-83EA-1D5E51C2D83B">
+<createdBy>sheandefonseka</createdBy>
+<createdTime>2023-05-03 03:12:57 UTC</createdTime>
+<commentInRDBMS><![CDATA[The local authority's name (which is unique)]]></commentInRDBMS>
+<generatorID>0A6ED685-99D5-3325-A9AA-12F3F31105B3</generatorID>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>35</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="AF785188-E2D7-AFAD-98EC-75D162F44B4B" referredColumn="FA9C0348-F76C-378F-A9AC-455D4842652A"/>
+</associations>
+</Column>
+<Column name="bin_type_id" id="15F30B01-1F96-FCB2-FC72-15398C44D48E">
+<createdBy>sheandefonseka</createdBy>
+<createdTime>2023-05-03 03:12:57 UTC</createdTime>
+<commentInRDBMS><![CDATA[Bin Type Id (Surrogate PK)]]></commentInRDBMS>
+<generatorID>076D3D40-C973-1AD8-F7DB-86272F5EDB07</generatorID>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="17F7CC0F-ECD1-511C-B5E9-83655708F6CA" referredColumn="1040B7A4-6F25-EEA1-F1F3-7193D72D3714"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="1ED128BD-A3B7-6E94-E492-0875056D4021" name="BIN_PK">
+<createdBy>sheandefonseka</createdBy>
+<createdTime>2023-05-03 03:12:57 UTC</createdTime>
+<generatorID>D5CA041C-1F3E-7303-8245-0224BAB7A2FE</generatorID>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8F91EF6B-472A-BE64-0CE4-3F8CD9E24EE9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="98C416C8-ADCB-24E3-A5CE-23B622610755" name="bin_type-bin">
+<createdBy>sheandefonseka</createdBy>
+<createdTime>2023-05-03 03:12:57 UTC</createdTime>
+<generatorID>07125586-E816-EDBB-8A98-AB5CAD8A57B7</generatorID>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="15F30B01-1F96-FCB2-FC72-15398C44D48E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E7EF7F47-9321-4F00-10DC-7A75843ED112" name="property_bin">
+<createdBy>sheandefonseka</createdBy>
+<createdTime>2023-05-03 03:12:57 UTC</createdTime>
+<generatorID>8D6981B4-1015-AB67-5865-5FAF727D6A98</generatorID>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FDCC6202-D6F6-56FB-4E86-9A62B0CF5455"/>
+<colUsage columnID="78BA9864-5F83-FE98-B7B3-DCCA88FC4E46"/>
+<colUsage columnID="1F7F1A01-8219-EE20-83EA-1D5E51C2D83B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

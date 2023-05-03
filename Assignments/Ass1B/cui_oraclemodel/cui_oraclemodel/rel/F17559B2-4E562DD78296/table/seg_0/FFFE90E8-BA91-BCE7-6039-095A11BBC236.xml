@@ -1,0 +1,91 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="FFFE90E8-BA91-BCE7-6039-095A11BBC236" name="DRIVER">
+<createdBy>sheandefonseka</createdBy>
+<createdTime>2023-05-03 03:12:57 UTC</createdTime>
+<generatorID>9D3610D3-A501-84F3-2C53-AC163AC6D6AB</generatorID>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="driver_number" id="9A32C78B-12C1-AE53-FFA4-8DF23507F51D">
+<createdBy>sheandefonseka</createdBy>
+<createdTime>2023-05-03 03:12:57 UTC</createdTime>
+<commentInRDBMS><![CDATA[driver number,which is unique.]]></commentInRDBMS>
+<generatorID>CD97969F-3F92-EA23-3956-CD9B8CB72361</generatorID>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="driver_contract_number" id="9D8299D1-2DA8-3D11-63FC-ED9AB0AF69C6">
+<createdBy>sheandefonseka</createdBy>
+<createdTime>2023-05-03 03:12:57 UTC</createdTime>
+<commentInRDBMS><![CDATA[driver contract number]]></commentInRDBMS>
+<generatorID>696B6B97-2BCC-8B1E-40CC-3608D10498D4</generatorID>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="licence_number" id="D63A184C-EAE1-6791-0259-8CB07BA75BCA">
+<createdBy>sheandefonseka</createdBy>
+<createdTime>2023-05-03 03:12:57 UTC</createdTime>
+<commentInRDBMS><![CDATA[licence number]]></commentInRDBMS>
+<generatorID>4CA6B06B-4A74-CB6A-86A8-A6CDE8D09A67</generatorID>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>9</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="93C480EE-C5FF-7760-1CAD-B7BC40BF1E1D" referredColumn="7262FE86-17B4-6FB5-358E-B1AC7227E7E3"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="937D3562-679D-D62C-4513-9842FE4B4983" name="DRIVER_PK">
+<createdBy>sheandefonseka</createdBy>
+<createdTime>2023-05-03 03:12:57 UTC</createdTime>
+<generatorID>2A64D7DD-504D-B660-D0B4-C04B29ECB6BA</generatorID>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9A32C78B-12C1-AE53-FFA4-8DF23507F51D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="42B77755-EE95-CC95-C8B5-07E78367F1E0" name="DRIVER__IDX">
+<createdBy>sheandefonseka</createdBy>
+<createdTime>2023-05-03 03:12:57 UTC</createdTime>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>D2687C81-F791-266D-3949-F081BB888DDC</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="D63A184C-EAE1-6791-0259-8CB07BA75BCA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6BC9906B-47FB-ED90-0423-5AAEFB72F11B" name="information-driver">
+<createdBy>sheandefonseka</createdBy>
+<createdTime>2023-05-03 03:12:57 UTC</createdTime>
+<generatorID>D2687C81-F791-266D-3949-F081BB888DDC</generatorID>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D63A184C-EAE1-6791-0259-8CB07BA75BCA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

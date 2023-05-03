@@ -1,0 +1,80 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="3AE5F3A8-0754-1560-FF65-4BFE8FB5F65A" name="CONTRACT_SUPPLY_COST">
+<createdBy>a726928</createdBy>
+<createdTime>2023-05-01 09:28:51 UTC</createdTime>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="F17559B2-635A-3F8E-895F-4E562DD78296" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="contract_supply_cost" id="C0B03A38-E162-F177-0512-E3B75B3D7ACB">
+<createdBy>a726928</createdBy>
+<createdTime>2023-05-01 09:31:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[contract supply coast]]></commentInRDBMS>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="F17559B2-635A-3F8E-895F-4E562DD78296" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="contract_number" id="F3F65B68-3E31-6DA2-8264-8F99C70F6729">
+<createdBy>a726928</createdBy>
+<createdTime>2023-05-01 09:56:11 UTC</createdTime>
+<commentInRDBMS><![CDATA[contract number, which is unique]]></commentInRDBMS>
+<generatorID>FA23A1A3-5193-3C3D-E86F-1EB4499B6F2F</generatorID>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="F17559B2-635A-3F8E-895F-4E562DD78296" value="true"/>
+</engineerTo>
+<referedAttribute>FDFA04C2-D307-82E2-DFE4-2C9FBFD05DA5</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="bin_type_id" id="C8DCB4F9-1859-302D-33B0-257A97340DAE">
+<createdBy>sheandefonseka</createdBy>
+<createdTime>2023-05-02 13:12:33 UTC</createdTime>
+<commentInRDBMS><![CDATA[Bin Type Id (Surrogate PK)]]></commentInRDBMS>
+<generatorID>F355C0EA-E6EA-E177-09C7-6F0F5503EC2C</generatorID>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="F17559B2-635A-3F8E-895F-4E562DD78296" value="true"/>
+</engineerTo>
+<referedAttribute>EB5E66FB-1322-04FE-FB73-9B771C5102F7</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="6F52246B-F1CE-CE87-39B6-F85D746CB2DF" name="CONTRACT_SUPPLY_COAST PK">
+<createdBy>a726928</createdBy>
+<createdTime>2023-05-01 09:30:41 UTC</createdTime>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="F17559B2-635A-3F8E-895F-4E562DD78296" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>F3F65B68-3E31-6DA2-8264-8F99C70F6729</attributeRef>
+<attributeRef>C8DCB4F9-1859-302D-33B0-257A97340DAE</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="driver-driver_collector" directorySegmentName="seg_0" id="AEABE323-7B2C-B7A6-9DA1-B9D55ED21E83">
+<createdBy>sheandefonseka</createdBy>
+<createdTime>2023-05-02 13:18:58 UTC</createdTime>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="F17559B2-635A-3F8E-895F-4E562DD78296" value="true"/>
+</engineerTo>
+<sourcePk>2A64D7DD-504D-B660-D0B4-C04B29ECB6BA</sourcePk>
+<identifying>true</identifying>
+<nameOnSource>assigned_to </nameOnSource>
+<nameOnTarget> </nameOnTarget>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>9D3610D3-A501-84F3-2C53-AC163AC6D6AB</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>7FD67F22-C9F3-CAC2-F5FC-3EFC881E656A</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>
